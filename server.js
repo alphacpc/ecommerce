@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const connectDB = require("./Config/db_connect");
 require("dotenv").config();
 const userRouter = require("./Routers/user");
+const authRouter = require("./Routers/auth");
 
 // Define some constant
 const app = express()
@@ -13,6 +14,7 @@ const PORT = 5050 || process.env.PORT;
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use("/api/users", userRouter);
+app.use("/api/auth", authRouter);
 
 
 // START CONNEXION FROM DB
