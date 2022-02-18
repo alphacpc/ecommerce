@@ -15,12 +15,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use("/api/users", userRouter);
 
 
-
-
 // START CONNEXION FROM DB
 connectDB();
-
-
 
 
 //Launch connexion and open server
