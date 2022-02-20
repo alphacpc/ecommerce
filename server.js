@@ -4,6 +4,7 @@ const connectDB = require("./Config/db_connect");
 require("dotenv").config();
 const userRouter = require("./Routers/user");
 const authRouter = require("./Routers/auth");
+const productRouter = require("./Routers/product");
 
 // Define some constant
 const app = express()
@@ -15,6 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use("/api/users", userRouter);
 app.use("/api/auth", authRouter);
+app.use("/api/products", productRouter);
 
 
 // START CONNEXION FROM DB
