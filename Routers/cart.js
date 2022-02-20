@@ -4,13 +4,13 @@ const Cart = require("../models/Cart");
 
 
 //CREATE PRODUCT
-router.post("/", verifyTokenAndAdmin , async (req, res) => {
+router.post("/", verifyToken , async (req, res) => {
     
-    const product = new Product(req.body);
+    const cart = new Cart(req.body);
 
     try{
-        const savedProduct = await product.save();
-        res.status(200).json(savedProduct)
+        const savedCart = await cart.save();
+        res.status(200).json(savedCart)
     }
     catch(err){
         console.log("Not working")
@@ -21,16 +21,16 @@ router.post("/", verifyTokenAndAdmin , async (req, res) => {
 
 
 //UPDATE PRODUCT
-router.put("/:id", verifyTokenAndAdmin , async (req,res) => {
+router.put("/:id", verifyToken , async (req,res) => {
 
     try{
-        const updateProduct = await Product.findByIdAndUpdate(
+        const updatedCart = await Cart.findByIdAndUpdate(
             req.params.id, 
             { $set: req.body},
             {new: true, useFindAndModify: false}
         );
                 
-        res.status(200).json(updateProduct);
+        res.status(200).json(updatedCart);
         
     }catch(err){
         res.status(500).json(err);
@@ -38,7 +38,7 @@ router.put("/:id", verifyTokenAndAdmin , async (req,res) => {
 })
 
 // DELETE PRODUCT
-router.delete("/:id", verifyTokenAndAdmin, async(req,res) =>{
+router.delete("/:id", verifyToken, async(req,res) =>{
     try{
         await Product.findByIdAndDelete(req.params.id)
         res.status(200).json("Product has been deleted...")
@@ -49,50 +49,32 @@ router.delete("/:id", verifyTokenAndAdmin, async(req,res) =>{
 })
 
 
-// GET PRODUCT
-router.get ("/find/:id", async(req,res) =>{
+// GET USER CART
+router.get ("/find/:userId", verifyTokenAndAuthorization,async(req,res) =>{
     try{
-        const product = await Product.findById(req.params.id);
+        const cart = await Cart.findOne({userId: req.params.userId});
 
-        res.status(200).json(product)
+        res.status(200).json(cart)
     }
     catch(err){
         res.status(500).json(err)
     }
-})
+})  
 
 
 
-// GET ALL PRODUCTS
-router.get("/",  async(req,res) =>{
-    
-    const qNew= req.query.new;
-    const qCategory= req.query.category;
+// GET ALL
+router.get("/", verifyTokenAndAdmin, async(req, res) => {
 
     try{
-        let products;
-
-        if(qNew){
-            products = await Product.find().sort({createdAt : -1}).limit(5);
-        }
-        else if(qCategory){
-            products = await Product.find({
-                productCat : {
-                    $in : [qCategory],
-                }
-            }).sort({createdAt : -1}).limit(5);
-        }
-        else{
-            products = await Product.find() ;
-        }
-
-        res.status(200).json(products);
+        const carts = await Cart.find()
+        res.status(200).json(carts)
     }
-
     catch(err){
-        res.status(500).json(err)
+        res.status(500).json(err);
     }
 })
+
 
 
 module.exports = router
