@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/alphacpc/ecommerce#readme",
   "dependencies": {
+    "axios": "^0.26.0",
     "bcrypt": "^5.0.1",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
