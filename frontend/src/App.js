@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Pay from './Pay';
+import Success from './Success';
 
 
 function App() {
@@ -6,10 +8,10 @@ function App() {
     <Router>
       <Switch>
         <Route path="/pay">
-          <h1>Payement</h1>
+          <Pay/>
         </Route>  
         <Route path="/success">
-          <h1>Success</h1>
+          <Success/>
         </Route>
       </Switch>
     </Router>
