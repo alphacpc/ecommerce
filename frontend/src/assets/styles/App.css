@@ -17,3 +17,8 @@
     font-family: "Montserrat-Bold";
     src: url('./../fonts/Montserrat/static/Montserrat-ExtraBold.ttf');
 }
+
+*{
+    text-decoration: none;
+    color: #000000;
+}
