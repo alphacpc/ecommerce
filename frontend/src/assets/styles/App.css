@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Anton";
+    src: url('./../fonts/Anton/Anton-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url('./../fonts/Montserrat/static/Montserrat-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url('./../fonts/Montserrat/static/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url('./../fonts/Montserrat/static/Montserrat-ExtraBold.ttf');
+}
