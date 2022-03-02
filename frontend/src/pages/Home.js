@@ -8,7 +8,6 @@ const Home = () => {
     <div>
         <Navbar/>
         <Announcement/>
-        <h1>Home page</h1>
     </div>
   )
 }

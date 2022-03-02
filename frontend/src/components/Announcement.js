@@ -1,5 +1,6 @@
 import React from 'react';
 import {ArrowLeftOutlined, ArrowRightOutlined} from "@ant-design/icons";
+import { Link } from "react-router-dom"
 import ImageSlide from "./../assets/images/model1.png";
 import "./../assets/styles/Announcement.css"
 
@@ -16,7 +17,8 @@ const Announcement = () => {
                 <img src={ImageSlide} alt="image du slide"/>
             </div>
             <div className="infoSlider">
-                <p>Lorem ipsum</p>
+                <h2 className="titleSlide"></h2>
+                <p className="">Lorem ipsum</p>
             </div>
         </div>
 
