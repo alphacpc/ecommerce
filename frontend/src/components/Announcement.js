@@ -46,7 +46,7 @@ const Announcement = () => {
                         <div className="imageSlider">
                             <img src={item.img} alt="image du slide"/>
                         </div>
-                        <div className="infoSlider">
+                        <div className={`infoSlider ${item.classname}`}>
                             <h2 className="titleSlide">{item.title}</h2>
                             <p className="">{item.desc}</p>
                             <button>Voir plus</button>
