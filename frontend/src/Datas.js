@@ -25,3 +25,41 @@ export const sliderItems = [
         classname : "normale"
     }
 ]
+
+export const categories = [
+    {
+        id : 1,
+        title : "Sacs",
+        desc : "Lorem ipsum",
+        img : require("./assets/images/Produits/ban1.jpg"),
+        classname : "third"
+    },
+    {
+        id : 2,
+        title : "T-shirt",
+        desc : "Lorem ipsum",
+        img : require("./assets/images/Produits/ban3.jpg"),
+        classname : "third"
+    },
+    {
+        id : 3,
+        title : "Montre",
+        desc : "Lorem ipsum",
+        img : require("./assets/images/Produits/ban4.jpg"),
+        classname : "third"
+    },
+    {
+        id : 4,
+        title : "Pull over",
+        desc : "Lorem ipsum",
+        img : require("./assets/images/Produits/ban5.jpg"),
+        classname : "half"
+    },
+    {
+        id : 5,
+        title : "Jeans",
+        desc : "Lorem ipsum",
+        img : require("./assets/images/Produits/ban2.jpg"),
+        classname : "half"
+    },
+]

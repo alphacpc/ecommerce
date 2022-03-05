@@ -1,0 +1,32 @@
+.categoryContainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.categoryContainer h2{
+    text-align: center;
+    font-size: 60px;
+    margin: 40px 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.divCategory{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.categoryItem{
+    height: 40vh;
+    width: 50%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.divCategory img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.categoryItem.third{
+    width: 33%;
+}
