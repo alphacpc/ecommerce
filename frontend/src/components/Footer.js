@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import { MediumOutlined, GithubOutlined, 
   GitlabOutlined, LinkedinOutlined, 
   YoutubeOutlined, PhoneOutlined,
-  MailOutlined, HomeOutlined, BuildOutlined } from '@ant-design/icons';
-import "./../assets/styles/Footer.css"
+  MailOutlined, HomeOutlined } from '@ant-design/icons';
+import "./../assets/styles/Footer.css";
+import { iconsPayement } from '../Datas';
 
 const Footer = () => {
   return (
@@ -16,13 +17,6 @@ const Footer = () => {
             repellendus, rem rerum quisquam. Fugiat earum, assumenda 
             porro aut cupiditate perspiciatis sequi reiciendis 
             explicabo eum dolore?</p>
-            
-            <div className="methods-payement">
-              <Link to="/">Visa</Link>
-              <Link to="/">MasterCard</Link>
-              <Link to="/">Express American</Link>
-              <Link to="/">PayPal</Link>
-            </div>
         </div>
 
         <div className="footerItem">
@@ -54,6 +48,13 @@ const Footer = () => {
             <p><PhoneOutlined/> +221 33 000 00 00</p>
             <p><HomeOutlined/> Yeumbeul Nord</p>
           </div>
+          <div className="methods-payement">
+              {
+                iconsPayement.map((icon,index) => (
+                  <img src={icon.img} width={80}/>
+                ))
+              }
+            </div>
         </div>
 
       </div>

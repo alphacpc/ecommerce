@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     padding-top: 10vh;
+    background-color: #EEEEEE;
 }
 .categoryContainer h2{
     text-align: center;

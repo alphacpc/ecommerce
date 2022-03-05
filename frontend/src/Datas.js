@@ -125,3 +125,24 @@ export const products = {
         },
     ]
 }
+
+
+export const iconsPayement = [
+    {
+        id: 3,
+        img: require("./assets/images/payements/pay3.png")
+    },
+    {
+        id: 5,
+        img: require("./assets/images/payements/pay5.png")
+    },
+    {
+        id: 1,
+        img: require("./assets/images/payements/pay1.png")
+    },
+    {
+        id: 2,
+        img: require("./assets/images/payements/pay2.png")
+    }
+    
+]

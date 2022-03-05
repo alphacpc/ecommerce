@@ -48,12 +48,8 @@
     margin-right: 20px;
 }
 
-/* .footerItem:nth-child(2){
-    background-color: rgb(0, 255, 21);
+.methods-payement{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
 }
-.footerItem:nth-child(3){
-    background-color: rgb(255, 166, 0);
-}
-.footerItem:nth-child(4){
-    background-color: rgb(111, 0, 255);
-} */
