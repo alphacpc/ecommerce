@@ -22,6 +22,11 @@
 .footerItem .column p{
     font-size: 20px;
     padding: 10px;
+    transition: all ease .2s;
+}
+.footerItem .column a:hover{
+    font-weight: bold;
+    font-size: 25px;
 }
 
 
