@@ -43,7 +43,7 @@ export const categories = [
     },
     {
         id : 3,
-        title : "Montre",
+        title : "Montres",
         desc : "Lorem ipsum",
         img : require("./assets/images/Produits/ban4.jpg"),
         classname : "third"

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import "./../assets/styles/Categories.css";
 import { categories } from './../Datas';
 
@@ -23,6 +24,8 @@ const Categories = () => {
                     categories.map((category,index) => (
                         <CategoryItem key={index} className={`categoryItem ${category.classname}`} bg={category.img}>
                             <h3>{category.title}</h3>
+                            <p>{category.desc}</p>
+                            <Link to="/">Voir plus</Link>
                         </CategoryItem>
                     ))
                 }
