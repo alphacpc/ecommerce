@@ -3,6 +3,7 @@ import Navbar from './../components/Navbar';
 import Announcement from './../components/Announcement';
 import Categories from './../components/Categories';
 import BestSell from './../components/BestSell';
+import NewsLetter from '../components/NewsLetter';
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
         <Announcement/>
         <Categories/>
         <BestSell/>
+        <NewsLetter/>
     </div>
   )
 }

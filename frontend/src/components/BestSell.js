@@ -12,6 +12,7 @@ const BestSell = () => {
   return (
     <div className="bestContainer">
       <h2>Meilleures ventes</h2>
+      <hr id="barBest"/>
       <div className="divBests">
         {
           bestSell.map((product, index) => (

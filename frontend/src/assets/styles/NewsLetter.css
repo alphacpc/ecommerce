@@ -1,0 +1,24 @@
+.contactContainer{
+    background-color: aquamarine;
+    height: 40vh;
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactContainer h2,
+.contactContainer p,
+.contactContainer form{
+    text-align: center;
+}
+
+.contactContainer h2{
+    font-size: 45px;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.contactContainer p{
+    font-size: 25px;
+}
