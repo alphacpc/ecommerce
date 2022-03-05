@@ -1,5 +1,5 @@
 import React from 'react';
-import {RedEnvelopeFilled, ArrowRightOutlined} from "@ant-design/icons";
+import { ArrowRightOutlined } from "@ant-design/icons";
 import "./../assets/styles/NewsLetter.css";
 
 

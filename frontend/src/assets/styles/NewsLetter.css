@@ -1,5 +1,5 @@
 .contactContainer{
-    background-color: aquamarine;
+    background-color: rgb(230, 228, 203);
     height: 40vh;
     padding: 0 10%;
     display: flex;
@@ -8,8 +8,7 @@
 }
 
 .contactContainer h2,
-.contactContainer p,
-.contactContainer form{
+.contactContainer p{
     text-align: center;
 }
 
@@ -17,8 +16,46 @@
     font-size: 45px;
     text-transform: uppercase;
     padding: 20px 0;
+    letter-spacing: 2px;
 }
-
 .contactContainer p{
     font-size: 25px;
+}
+.contactContainer form{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.contactContainer form input{
+    width: 60%;
+    padding: 15px 10px;
+    border: 1px solid grey;
+    font-size: 20px;
+    font-family: "Montserrat-Medium";
+    outline: 0;
+    border: none;
+}
+
+.contactContainer form button{
+    padding: 15px 20px;
+    background-color: rgb(231, 64, 14);
+    border: none;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.contactContainer form button:hover{
+    padding: 15px 20px;
+    background-color: orangered;
+    border: none;
+    cursor: pointer;
+}
+
+.contactContainer form button svg{
+    color: white;
+    width: 20px;
+    height: 20px;
+}
+.contactContainer form button svg path{
+    color: white;
 }
