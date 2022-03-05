@@ -1,7 +1,7 @@
 import React from 'react';
 import "./../assets/styles/BestSell.css";
 import { products } from "./../Datas";
-import {ShoppingOutlined, ShoppingCartOutlined, SearchOutlined, HeartOutlined} from "@ant-design/icons";
+import { ShoppingCartOutlined, SearchOutlined, HeartOutlined} from "@ant-design/icons";
 
 
 
@@ -18,9 +18,9 @@ const BestSell = () => {
             <div className="bestItem">
               <img className={`${product.classname}`} src={product.img} alt={`${product.title}`}/>
               <div className="divIcons">
-                <SearchOutlined color=''/>
-                <HeartOutlined/>
-                <ShoppingCartOutlined/>
+                <SearchOutlined className="loop"/>
+                <HeartOutlined className="heart"/>
+                <ShoppingCartOutlined className="cart"/>
               </div>
             </div>
           ))
