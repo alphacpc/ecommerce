@@ -16,7 +16,7 @@ const BestSell = () => {
       <div className="divBests">
         {
           bestSell.map((product, index) => (
-            <div className="bestItem">
+            <div className="bestItem" key={index}>
               <img className={`${product.classname}`} src={product.img} alt={`${product.title}`}/>
               <div className="divIcons">
                 <SearchOutlined className="loop"/>

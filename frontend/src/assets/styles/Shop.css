@@ -1,0 +1,90 @@
+.shopContainer .footerContainer{
+    background: #F68989;
+    padding-top: 40px;
+}
+
+.shopContainer #BannerShop{
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.shopContainer .WelcomeShop h1,
+.shopContainer .WelcomeShop h2{
+    color: #FFFFFF !important;
+}
+.shopContainer .WelcomeShop > div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.shopContainer .WelcomeShop h1{
+    font-size: 80px;
+    z-index: 2;
+}
+.shopContainer .WelcomeShop > div span{
+    content: "";
+    padding: 50px;
+    position: absolute;
+    z-index: 1;
+    opacity: .8;
+    border-radius: 50%;
+    background-color: #d60d0d;
+    left: 81%;
+}
+.shopContainer .WelcomeShop h2{
+    font-size: 35px;
+    letter-spacing: 2px;
+    z-index: 88;
+    font-family: "Montserrat-Light";
+}
+
+
+.divContent{
+    padding: 10vh 10%;
+}
+.divContent h2{
+    text-align: center;
+    font-size: 45px;
+    padding: 20px 0;
+}
+.divContent p{
+    text-align: center;
+    font-family: "Montserrat-Light";
+    font-size: 25px;
+    line-height: 35px;
+}
+.divContent  .byCartegory{
+    margin-top: 100px;
+
+}
+.divContent  .byCartegory h3{
+    font-size: 35px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.divContent  .byCartegory hr#tiret{
+    width: 100px;
+    padding: 5px;
+    background-color: #711A75;
+    margin-top: -10px;
+    margin-bottom: 60px;
+    border-radius: 20px;
+    border: none;
+}
+
+
+
+.divProducts{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.byCategory .divProducts .bestItem{
+    margin: 0 !important;
+}
