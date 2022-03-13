@@ -9,6 +9,7 @@ import {products} from "./../Datas"
 const FilterColor = styled.div`
   padding: 20px;
   border-radius: 50%;
+  cursor: pointer;
   background-color: #${(props) => props.color};
 `;
 
@@ -31,20 +32,20 @@ const Single = () => {
         </div>
 
         <div className="divProductInfo">
-          <h1>{product.title}</h1>
-          {product.marque && <h2>Marque {product.marque}</h2>}
+          <h1>{product.title} {product.marque && <span>({product.marque})</span>}</h1>
+
           <p>{product.descLong}</p>
           
-          <div>
+          <div className="divAmount">
             <h2>{product.prix} FCFA</h2>
             <div className="productQauntity">
-              <span>-</span>
-              <span>{quantity}</span>
-              <span>+</span>
+              <span className="action">-</span>
+              <span className="value">{quantity}</span>
+              <span className="action">+</span>
             </div>
           </div>
 
-          <div className="colorFilters">
+          <div className="divColors">
             <h2>Couleur(s)</h2>
             <div className="divFilterColors">
               {
@@ -55,7 +56,7 @@ const Single = () => {
             </div>
           </div>
 
-          <button>Ajouter au panier</button>
+          <button id="btn-add-cart">Ajouter au panier</button>
 
         </div>
       </div>

@@ -1,16 +1,14 @@
 .singleContainer .footerContainer{
-    background: #E2D784;
+    background: #F0A500;
     padding-top: 40px;
 }
 
 .singleBody{
-    /* background-color: #6FB2D2; */
     padding: 10vh 10%;
     display: flex;
 }
 
 .divProductImage{
-    /* background: seashell; */
     flex: 1;
     display: flex;
     justify-content: center;
@@ -22,15 +20,90 @@
 }
 
 .divProductInfo{
-    /* background: yellowgreen; */
     flex: 1;
     padding: 20px;
 }
+.divProductInfo h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-family: "Montserrat-Bold";
+    letter-spacing: 2px;
+}
+.divProductInfo > p{
+    font-size: 25px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
 
-.divFilterColors{
+
+
+.divProductInfo .divAmount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.divProductInfo .divAmount h2{
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+.divProductInfo .productQauntity{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    justify-content: space-between;
+}
+.divProductInfo .productQauntity span{
+    padding: 4px 15px;
+    border-radius: 50%;
+}
+
+.divProductInfo .productQauntity span.action{
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #E2D784;
+
+}
+
+
+.divProductInfo .divColors{
+    margin-bottom: 40px;
+}
+.divProductInfo .divColors h2{
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #5d5c5c;
+}
+.divProductInfo .divFilterColors{
     display: flex;
     margin-top: 20px;
 }
-.divFilterColors div{
-    margin-right: 10px;
+
+.divProductInfo .divFilterColors div{
+    margin-right: 15px;
+    transition: all ease.3s;
+}
+.divProductInfo .divFilterColors div:last-child{
+    margin-right: 0px;
+}
+.divProductInfo .divFilterColors div:hover{
+    transform:  scale(1.4);
+}
+
+
+
+.divProductInfo #btn-add-cart{
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    font-family: "Montserrat-Medium";
+    font-size: 25px;
+    transition: all ease .5s;
+}
+.divProductInfo #btn-add-cart:hover{
+    background: orange;
+    color: #000000;
 }
