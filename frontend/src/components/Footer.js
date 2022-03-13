@@ -51,7 +51,7 @@ const Footer = () => {
           <div className="methods-payement">
               {
                 iconsPayement.map((icon,index) => (
-                  <img src={icon.img} width={80}/>
+                  <img src={icon.img} key={index} width={80}/>
                 ))
               }
             </div>

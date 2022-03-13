@@ -12,9 +12,11 @@ const Navbar = () => {
             <Link to="/"><span>bydoo.</span></Link>
         </div>
         <div className="divLinkAuth">
+            <Link to="/">Accueil</Link>
+            <Link to="/boutique">Boutique</Link>
             <Link to="/">s'inscrire</Link>
             <Link to="/">s'identifier</Link>
-            <Link to="/"><ShoppingOutlined/></Link>
+            <Link to="/panier"><ShoppingOutlined/></Link>
         </div>
     </div>
   )

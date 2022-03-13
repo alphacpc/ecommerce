@@ -1,0 +1,36 @@
+.singleContainer .footerContainer{
+    background: #E2D784;
+    padding-top: 40px;
+}
+
+.singleBody{
+    /* background-color: #6FB2D2; */
+    padding: 10vh 10%;
+    display: flex;
+}
+
+.divProductImage{
+    /* background: seashell; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 0;
+}
+.divProductImage img{
+    object-fit: scale-down;
+}
+
+.divProductInfo{
+    /* background: yellowgreen; */
+    flex: 1;
+    padding: 20px;
+}
+
+.divFilterColors{
+    display: flex;
+    margin-top: 20px;
+}
+.divFilterColors div{
+    margin-right: 10px;
+}

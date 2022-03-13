@@ -97,10 +97,18 @@ export const products = {
         },
         {
             id : 5,
-            title : "Jeans",
+            title : "Montre Lige Classic",
             desc : "Lorem ipsum",
+            descLong :  "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.",
             img : require("./assets/images/Produits/montre3.png"),
-            classname : "montre"
+            imgList: [
+                require("./assets/images/Produits/montre3.png"),
+                require("./assets/images/Produits/montre4.jpg")
+            ],
+            colors : [ "000000", "0E3EDA" ],
+            classname : "montre",
+            prix: 250000,
+            marque: "Lige"
         },
         {
             id : 5,

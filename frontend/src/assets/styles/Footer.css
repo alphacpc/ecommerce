@@ -32,6 +32,7 @@
 
 .footerItem:nth-child(1) h1{
     font-size: 60px;
+    margin-bottom: 25px;
 }
 .footerItem:nth-child(1) p{
     font-size: 20px;
