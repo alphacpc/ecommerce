@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Cart from './pages/Cart';
 import Single from './pages/Single';
 import Shop from './pages/Shop';
+import Category from './pages/Categories';
 import Pay from './Pay';
 import Success from './Success';
 
@@ -19,6 +20,9 @@ function App() {
         </Route>
         <Route path="/boutique" exact>
           <Shop/>
+        </Route>
+        <Route path="/categorie" exact>
+          <Category/>
         </Route>
         <Route path="/detail" exact>
           <Single/>

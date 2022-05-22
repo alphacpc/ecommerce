@@ -2,7 +2,8 @@ import React from 'react';
 import Navbar from './../components/Navbar';
 import Footer from '../components/Footer';
 import styled from "styled-components";
-import { ShoppingCartOutlined, SearchOutlined, HeartOutlined} from "@ant-design/icons";
+import { Link } from "react-router-dom";
+import { ShoppingCartOutlined, SearchOutlined, HeartOutlined, ArrowRightOutlined} from "@ant-design/icons";
 
 import "./../assets/styles/Shop.css";
 import { products } from "./../Datas";
@@ -64,6 +65,10 @@ const Shop = () => {
                     </div>
                 ))
                 }
+              </div>
+
+              <div className='divLinkSeeMore'>
+                <Link to={`/categorie?nom=${el}`}>Voir plus <ArrowRightOutlined/></Link>
               </div>
             </div>
             ))

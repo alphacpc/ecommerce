@@ -13,8 +13,6 @@ const CategoryItem = styled.div`
 
 const Categories = () => {
 
-    console.log(categories)
-
     return (
         <div className="categoryContainer">
             <h2>toutes nos catégories</h2>
@@ -25,7 +23,7 @@ const Categories = () => {
                         <CategoryItem key={index} className={`categoryItem ${category.classname}`} bg={category.img}>
                             <h3>{category.title}</h3>
                             <p>{category.desc}</p>
-                            <Link to="/">Voir plus</Link>
+                            <Link to={`/categorie?nom=${category.title}`}>Voir plus</Link>
                         </CategoryItem>
                     ))
                 }

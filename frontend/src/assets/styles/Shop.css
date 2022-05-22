@@ -88,3 +88,20 @@
 .byCategory .divProducts .bestItem{
     margin: 0 !important;
 }
+
+.divLinkSeeMore{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.divLinkSeeMore a{
+    background: #F68989;
+    padding: 20px 50px;
+    transition: all ease .3s;
+}
+
+.divLinkSeeMore a:hover{
+    background: #F68989;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 #000000;
+}

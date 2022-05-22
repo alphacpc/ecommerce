@@ -1,0 +1,42 @@
+.categoryBanner h2{
+    font-size: 60px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.categoryBanner #barre{
+    padding: 8px;
+    background: yellow;
+    width: 200px;
+    border-radius: 8px;
+    border: none;
+}
+
+.categoryDetailContainer .divProducts{
+    padding: 50px 10%;
+}
+
+.divPagination{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divPagination span{
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: all ease .3s;
+}
+
+.divPagination span:hover{
+    background: #1aaabb;
+    color: #FFFFFF;
+}
+
+.categoryDetailContainer .footerContainer{
+    background: #1aaabb;
+}
