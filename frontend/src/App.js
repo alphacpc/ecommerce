@@ -24,7 +24,7 @@ function App() {
         <Route path="/categorie" exact>
           <Category/>
         </Route>
-        <Route path="/detail" exact>
+        <Route path="/detail/:name" exact>
           <Single/>
         </Route>
         <Route path="/panier" exact>

@@ -1,7 +1,10 @@
 import React from 'react';
 import "./../assets/styles/BestSell.css";
 import { products } from "./../Datas";
-import { ShoppingCartOutlined, SearchOutlined, HeartOutlined} from "@ant-design/icons";
+
+import ProductItem from './../components/ProductItem';
+
+
 
 
 
@@ -15,15 +18,8 @@ const BestSell = () => {
       <hr id="barBest"/>
       <div className="divBests">
         {
-          bestSell.map((product, index) => (
-            <div className="bestItem" key={index}>
-              <img className={`${product.classname}`} src={product.img} alt={`${product.title}`}/>
-              <div className="divIcons">
-                <SearchOutlined className="loop"/>
-                <HeartOutlined className="heart"/>
-                <ShoppingCartOutlined className="cart"/>
-              </div>
-            </div>
+          bestSell.map((product, ind) => (
+            <ProductItem ind={ind} product={product} />
           ))
         }
       </div>

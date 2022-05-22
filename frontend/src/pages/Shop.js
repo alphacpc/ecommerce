@@ -3,11 +3,12 @@ import Navbar from './../components/Navbar';
 import Footer from '../components/Footer';
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { ShoppingCartOutlined, SearchOutlined, HeartOutlined, ArrowRightOutlined} from "@ant-design/icons";
+import { ArrowRightOutlined } from "@ant-design/icons";
 
 import "./../assets/styles/Shop.css";
 import { products } from "./../Datas";
 
+import ProductItem from './../components/ProductItem';
 
 import banner from "./../assets/images/bannerShop2.jpg"
 
@@ -55,14 +56,7 @@ const Shop = () => {
               <div className="divProducts">
                 {
                   products['best-sell'].map((product, ind) => (
-                    <div className="bestItem" key={ind}>
-                      <img className={`${product.classname}`} src={product.img} alt={`${product.title}`}/>
-                      <div className="divIcons">
-                        <SearchOutlined className="loop"/>
-                        <HeartOutlined className="heart"/>
-                        <ShoppingCartOutlined className="cart"/>
-                      </div>
-                    </div>
+                    <ProductItem ind={ind} product={product} />
                 ))
                 }
               </div>

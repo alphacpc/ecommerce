@@ -2,11 +2,13 @@ import React, {useState} from 'react';
 import Navbar from './../components/Navbar';
 import Footer from './../components/Footer';
 import styled from "styled-components";
-import { ShoppingCartOutlined, SearchOutlined, HeartOutlined} from "@ant-design/icons";
 
 
 import { categories, products } from './../Datas';
 import "./../assets/styles/DetailCategory.css";
+
+import ProductItem from './../components/ProductItem';
+
 
 
 
@@ -41,14 +43,8 @@ const Categories = () => {
         <div className="divProducts">
           {
             products['best-sell'].map((product, ind) => (
-            <div className="bestItem" key={ind}>
-              <img className={`${product.classname}`} src={product.img} alt={`${product.title}`}/>
-              <div className="divIcons">
-                <SearchOutlined className="loop"/>
-                <HeartOutlined className="heart"/>
-                <ShoppingCartOutlined className="cart"/>
-              </div>
-            </div>))
+              <ProductItem ind={ind} product={product} />
+            ))
           }
 
           <div className="divPagination">
