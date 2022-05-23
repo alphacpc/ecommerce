@@ -72,28 +72,36 @@ export const products = {
             title : "Sacs",
             desc : "Lorem ipsum",
             img : require("./assets/images/Produits/jacket2.png"),
-            classname : "third"
+            classname : "third",
+            prix: 250000,
+            marque: "Lige"
         },
         {
             id : 2,
             title : "T-shirt",
             desc : "Lorem ipsum",
             img : require("./assets/images/Produits/montre2.png"),
-            classname : "montre"
+            classname : "montre",
+            prix: 250000,
+            marque: "Lige"
         },
         {
             id : 3,
             title : "Montres",
             desc : "Lorem ipsum",
             img : require("./assets/images/Produits/tshirt7.png"),
-            classname : "third"
+            classname : "third",
+            prix: 250000,
+            marque: "Lige"
         },
         {
             id : 4,
             title : "Pull over",
             desc : "Lorem ipsum",
             img : require("./assets/images/Produits/sac1.png"),
-            classname : "half"
+            classname : "half",
+            prix: 250000,
+            marque: "Lige"
         },
         {
             id : 5,
@@ -115,21 +123,27 @@ export const products = {
             title : "Jeans",
             desc : "Lorem ipsum",
             img : require("./assets/images/Produits/jacket1.png"),
-            classname : "half"
+            classname : "half",
+            prix: 250000,
+            marque: "Lige"
         },
         {
             id : 5,
             title : "Jeans",
             desc : "Lorem ipsum",
             img : require("./assets/images/Produits/jacket6.png"),
-            classname : "half"
+            classname : "half",
+            prix: 250000,
+            marque: "Lige"
         },
         {
             id : 5,
             title : "Jeans",
             desc : "Lorem ipsum",
             img : require("./assets/images/Produits/tshirt2.png"),
-            classname : "half"
+            classname : "half",
+            prix: 250000,
+            marque: "Lige"
         },
     ]
 }
