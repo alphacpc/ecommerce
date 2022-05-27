@@ -1,0 +1,82 @@
+.divCheckoutContainer .footerContainer{
+    background: #066163;
+    color: #FFFFFF !important;
+}
+
+.divContentOrder{
+    display: flex;
+    background: pink ;
+    padding: 100px 10%; 
+}
+.divContentOrder .orders{
+    flex: 1;
+    background: wheat;
+}
+
+.divContentOrder .method-payment{
+    flex: 1;
+    background: aqua;
+}
+
+/* ************ ORDERS PRODUCT ********* */
+.orderProducts{
+    background: turquoise;
+    border: 1px solid red;
+    border-radius: 4px;
+    padding: 30px;
+}
+
+.orderProductItem{
+    display: flex;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.orderProductItem .productImage{
+    background: #066163;
+    height: 140px;
+    width: 140px;
+    border: 1px solid yellow;
+    border-radius: 4px;
+}
+
+.orderProductItem .productImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.orderProductItem .productSommary{
+    background: violet;
+    width: calc(100% - 160px);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orderProductItem .productSommary h3,
+.orderProductItem .productSommary h4{
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.orderProductItem .productSommary h3{
+    font-size: 25px;
+}
+
+.orderProductItem .productSommary h4{
+    font-size: 20px;
+}
+
+.orderProductItem .productSommary .price{
+    display: flex;
+    flex-direction: column;
+}
+
+.orderProductItem .productSommary span.unitaire{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
