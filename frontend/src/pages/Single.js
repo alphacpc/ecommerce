@@ -20,7 +20,6 @@ const Single = () => {
   const [product] = useState(products["best-sell"][4]);
   const [quantity, setQuantity] = useState(1);
 
-  console.log(product)
 
   return (
     <div className="singleContainer">

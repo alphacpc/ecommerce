@@ -40,7 +40,7 @@ const Cart = () => {
           <div className="divCartItems">
             {
               products['best-sell'].slice(0,4).map((product,index) => 
-                <ProductCart product={product} index={index}/>
+                <ProductCart product={product} key={index} index={index}/>
               )
             }
             

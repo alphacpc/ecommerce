@@ -56,7 +56,7 @@ const Shop = () => {
               <div className="divProducts">
                 {
                   products['best-sell'].map((product, ind) => (
-                    <ProductItem ind={ind} product={product} />
+                    <ProductItem ind={ind} key={ind} product={product} />
                 ))
                 }
               </div>

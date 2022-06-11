@@ -20,6 +20,7 @@ const checkout = () => {
                         {
                             [1,3,2,1].map((el, i) => {
                                 return <div className="orderProductItem" key={i}>
+                                    <span className="removeItem">X</span>
                                     <div className='productImage'>
                                         <img src={ products['best-sell'][0].img} alt="" />
                                     </div>

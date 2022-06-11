@@ -19,7 +19,7 @@ const BestSell = () => {
       <div className="divBests">
         {
           bestSell.map((product, ind) => (
-            <ProductItem ind={ind} product={product} />
+            <ProductItem ind={ind} key={ind} product={product} />
           ))
         }
       </div>

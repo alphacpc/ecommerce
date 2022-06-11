@@ -1,42 +1,57 @@
-.divCheckoutContainer .footerContainer{
-    background: #066163;
-    color: #FFFFFF !important;
-}
-
 .divContentOrder{
     display: flex;
-    background: pink ;
+    /* background: pink ; */
     padding: 100px 10%; 
 }
 .divContentOrder .orders{
     flex: 1;
-    background: wheat;
 }
 
 .divContentOrder .method-payment{
     flex: 1;
     background: aqua;
+    padding: 0 20px;
+}
+.divContentOrder h2{
+    margin-bottom: 20px;
 }
 
 /* ************ ORDERS PRODUCT ********* */
 .orderProducts{
-    background: turquoise;
-    border: 1px solid red;
-    border-radius: 4px;
+    /* background: turquoise; */
+    /* border: 1px solid red; */
+    /* border-radius: 4px; */
     padding: 30px;
 }
 
 .orderProductItem{
     display: flex;
-    border-radius: 4px;
-    margin-bottom: 20px;
+    /* border-radius: 4px; */
+    align-items: center;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #c9c9c9ab;
+}
+
+.orderProductItem:last-child{
+    border-bottom: none;
+}
+
+.orderProductItem .removeItem{
+    background: #f05;
+    padding: 4px 8px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    border: none;
 }
 
 .orderProductItem .productImage{
-    background: #066163;
-    height: 140px;
-    width: 140px;
-    border: 1px solid yellow;
+    /* background: #066163; */
+    height: 110px;
+    width: 110px;
+    border: 1px solid #c9c9c947;
     border-radius: 4px;
 }
 
@@ -47,7 +62,7 @@
 }
 
 .orderProductItem .productSommary{
-    background: violet;
+    /* background: violet; */
     width: calc(100% - 160px);
     padding: 20px;
     display: flex;
@@ -79,4 +94,20 @@
     font-weight: bold;
     letter-spacing: 1px;
     margin-bottom: 10px;
+}
+
+
+
+
+
+/* *************Footer Container*************** */
+.divCheckoutContainer .footerContainer{
+    background: #0a2062;
+}
+
+.divCheckoutContainer .footerContainer a,
+.divCheckoutContainer .footerContainer p,
+.divCheckoutContainer .footerContainer h2,
+.divCheckoutContainer .footerContainer svg path{
+    color: #FFFFFF !important;
 }
