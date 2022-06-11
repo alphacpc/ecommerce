@@ -4,6 +4,10 @@
     align-items: center;
     padding: 0 2%;
     height: 10vh;
+    /* position: fixed; */
+    z-index: 44;
+    width: 96%;
+    /* background-color: #FFF; */
 }
 
 
