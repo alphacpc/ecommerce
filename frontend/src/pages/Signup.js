@@ -5,7 +5,8 @@ import {
     UsergroupAddOutlined,
     MessageOutlined
 } from "@ant-design/icons";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+
 
 import './../assets/styles/Signup.css'
 
@@ -67,12 +68,12 @@ const Signup = () => {
                     </div>
                 </div>
 
-                <div className="divForget divLine">
+                {/* <div className="divForget divLine">
                     <Link to="/">Mot de passe oublié !</Link>
-                </div>
+                </div> */}
 
                 <div className="divLine btn-connect">
-                    <button>se connecter</button>
+                    <button>Enregistrer</button>
                 </div>
 
                 <div className="already divLine">

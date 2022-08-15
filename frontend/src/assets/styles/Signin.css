@@ -1,0 +1,21 @@
+.divSigninContainer{
+    background: #e5e2e285;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.divSigninContainer .divForm{
+    background: #FFF;
+    width: 450px;
+    border-radius: 4px;
+}
+
+.divSigninContainer .divForm h1{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.divSigninContainer .divFormGroup{
+    width: 100% !important;
+}
