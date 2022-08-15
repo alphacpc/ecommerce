@@ -1,17 +1,14 @@
 import React from 'react'
 import { LockOutlined, MessageOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom"
-import "./../assets/styles/Signin.css"
 
-const Signin = () => {
+const ResetPassword = () => {
   return (
-    
     <div className="divSigninContainer">
         <div className="divForm">
 
-            <div className="divPanelHeader">
-                <h2>Connexion</h2>
-                <span></span>
+            <div className="divPanelHeader forget-password">
+                <h2>Mot de passe oublié</h2>
             </div>
 
 
@@ -24,32 +21,19 @@ const Signin = () => {
                         <input type="email" />
                     </div>
                 </div>
-                <div className="divFormGroup">
-                    <label htmlFor="">Votre Mot de passe</label>
-                    <div>
-                        <LockOutlined/>
-                        <input type="password" />
-                    </div>
-                </div>
                 
-
-                <div className="divForget divLine">
-                    <Link to="/mot_de_passe_oublie">Mot de passe oublié !</Link>
-                </div>
-
                 <div className="divLine btn-connect">
-                    <button>se connecter</button>
+                    <button>Envoyer</button>
                 </div>
 
                 <div className="already divLine">
-                    <p>Vous n'avez pas de compte ! <Link to="/inscription">s'inscrire</Link></p>
+                    <p>Vous avez déjà un compte ! <Link to="/connexion">se connecter</Link></p>
                 </div>
 
             </form>
         </div>
     </div>
-
   )
 }
 
-export default Signin
+export default ResetPassword

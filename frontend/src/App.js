@@ -12,7 +12,9 @@ import Category from './pages/Categories';
 import Checkout from './pages/checkout';
 import Signin from './pages/Signin';
 import Signup from './pages/Signup';
+import ResetPassword from './pages/ResetPassword';
 import Account from './pages/Account';
+
 
 import Pay from './Pay';
 import Success from './Success';
@@ -35,6 +37,7 @@ function App() {
         <Route path="/commande"><Checkout/></Route>
         <Route path="/connexion"><Signin/></Route>
         <Route path="/inscription"><Signup/></Route>
+        <Route path="/mot_de_passe_oublie"><ResetPassword/></Route>
         <Route path="/moncompte"><Account/></Route>
         <Route path="/pay"><Pay/></Route>  
         <Route path="/success"><Success/></Route>

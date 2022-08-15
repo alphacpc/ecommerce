@@ -19,3 +19,8 @@
 .divSigninContainer .divFormGroup{
     width: 100% !important;
 }
+
+.forget-password{
+    padding: 20px 0 !important ;
+    margin: 10px !important;
+}

@@ -23,9 +23,9 @@ const Footer = () => {
           <h2>Liens</h2>
 
           <div className="column">
-            <Link to="/">Mon compte</Link>
-            <Link to="/">Boutique</Link>
-            <Link to="/">Mon panier</Link>
+            <Link to="/moncompte">Mon compte</Link>
+            <Link to="/boutique">Boutique</Link>
+            <Link to="/panier">Mon panier</Link>
             <Link to="/">Mes favories</Link>
           </div>
         </div>
