@@ -31,10 +31,11 @@ const Categories = () => {
 
   const nameCategory = useHistory().location.search.split('=')[1]
 
-  console.log(categories)
 
   const [category] = useState(categories.filter(category => category.title == nameCategory)[0])
 
+
+  window.scrollTo(0, 10)
 
   return (
     <div className="categoryDetailContainer">

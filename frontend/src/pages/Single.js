@@ -39,6 +39,9 @@ const Single = () => {
   }
 
 
+  window.scrollTo(0, 10);
+
+
   return (
     <div className="singleContainer">
       <Navbar/>

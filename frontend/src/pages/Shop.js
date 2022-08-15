@@ -22,7 +22,6 @@ const BannerShop = styled.div`
 const Shop = () => {
 
 
-
   return (
     <div className="shopContainer">
       <Navbar/>
@@ -49,7 +48,7 @@ const Shop = () => {
 
 
           {
-            ["Sacs", "Tshirt", "Montres", "Pull over", "Jeans"].map((el,index) => (
+            ["Sacs", "T-shirt", "Montres", "Pull over", "Jeans"].map((el,index) => (
               <div className="byCartegory" key={index}>
               <h3>{el}</h3>
               <hr id="tiret"/>

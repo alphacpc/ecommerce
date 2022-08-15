@@ -15,6 +15,8 @@ import { products } from "./../Datas";
 
 const Cart = () => {
   
+  window.scrollTo(0, 10);
+
 
   return (
     <div className="cartContainer">
