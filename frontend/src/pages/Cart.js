@@ -48,7 +48,33 @@ const Cart = () => {
           </div>
 
           <div className="divCartPrices">
-            <h2>Résumé de la commande</h2>
+            <h2>Résumé de la Commande</h2>
+            <div>
+              <div className="shipping-info">
+                <h4>Sous total</h4>
+                <span>100000 FCFA</span>
+              </div>
+
+              <div className="shipping-info">
+                <h4>Taux des frais de livraison</h4>
+                <span>1%</span>
+              </div>
+
+              <div className="shipping-info">
+                <h4>Frais de livraison</h4>
+                <span>1000 FCFA</span>
+              </div>
+
+              <div className="shipping-info total">
+                <h4>Total</h4>
+                <span>110000 FCFA</span>
+              </div>
+            </div>
+
+            <div className="dinBtnCheckout">
+              <Link to="/commande">Passer la commande</Link>
+            </div>
+          
           </div>
         </div>
 

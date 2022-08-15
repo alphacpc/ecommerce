@@ -12,6 +12,26 @@
 
 
 
+/* 
+.navbarContainer a,
+.navbarContainer .divLogoHeader span,
+.navbarContainer svg path {
+    color: #FFF !important;
+}
+
+.navbarContainer.scrolled{
+    background: #FFF;
+}
+
+.navbarContainer.scrolled a,
+.navbarContainer.scrolled .divLogoHeader span,
+.navbarContainer.scrolled svg path{
+    color: #000000 !important;
+} */
+
+
+
+
 .divLogoHeader span{
     font-size: 60px;
     font-family: "Anto";
