@@ -6,6 +6,7 @@
 .singleBody{
     padding: 10vh 10%;
     display: flex;
+    align-items: center;
 }
 
 .divProductImage{
@@ -41,7 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .divProductInfo .divAmount h2{
     font-size: 40px;
@@ -50,7 +51,6 @@
 .divProductInfo .productQauntity{
     display: flex;
     align-items: center;
-    width: 20%;
     justify-content: space-between;
 }
 .divProductInfo .productQauntity span{

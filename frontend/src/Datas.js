@@ -69,8 +69,9 @@ export const products = {
     "best-sell" : [
         {
             id : 1,
-            title : "Sacs",
+            title : "Jacket Black and Gray",
             desc : "Lorem ipsum",
+            descLong :  "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.",
             img : require("./assets/images/Produits/jacket2.png"),
             classname : "third",
             prix: 250000,
@@ -78,8 +79,9 @@ export const products = {
         },
         {
             id : 2,
-            title : "T-shirt",
+            title : "Lige Classic",
             desc : "Lorem ipsum",
+            descLong :  "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.",
             img : require("./assets/images/Produits/montre2.png"),
             classname : "montre",
             prix: 250000,
@@ -87,8 +89,9 @@ export const products = {
         },
         {
             id : 3,
-            title : "Montres",
+            title : "Puma T-shirt",
             desc : "Lorem ipsum",
+            descLong :  "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.",
             img : require("./assets/images/Produits/tshirt7.png"),
             classname : "third",
             prix: 250000,
@@ -96,7 +99,8 @@ export const products = {
         },
         {
             id : 4,
-            title : "Pull over",
+            title : "Sac Lacoste",
+            descLong :  "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.",
             desc : "Lorem ipsum",
             img : require("./assets/images/Produits/sac1.png"),
             classname : "half",
@@ -119,27 +123,30 @@ export const products = {
             marque: "Lige"
         },
         {
-            id : 5,
-            title : "Jeans",
+            id : 6,
+            title : "Jacket Jeans",
             desc : "Lorem ipsum",
+            descLong :  "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.",
             img : require("./assets/images/Produits/jacket1.png"),
             classname : "half",
             prix: 250000,
             marque: "Lige"
         },
         {
-            id : 5,
-            title : "Jeans",
+            id : 7,
+            title : "Jackets Yellow black white Gray",
             desc : "Lorem ipsum",
+            descLong :  "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.",
             img : require("./assets/images/Produits/jacket6.png"),
             classname : "half",
             prix: 250000,
             marque: "Lige"
         },
         {
-            id : 5,
-            title : "Jeans",
+            id : 8,
+            title : "Female T-shirt",
             desc : "Lorem ipsum",
+            descLong :  "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.",
             img : require("./assets/images/Produits/tshirt2.png"),
             classname : "half",
             prix: 250000,

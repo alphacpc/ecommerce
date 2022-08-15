@@ -17,30 +17,9 @@ import Checkout from './pages/checkout';
 
 function App() {
   
-  const [pathname, setPathname] = useState(window.location.pathname)
-
-  document.addEventListener('click', () => {
-    let pathtemp = window.location.pathname
-    
-    console.log("Premier : ",window.scrollY)
 
 
-    if(pathname != pathtemp ){
-      console.log("Changement")
-      setPathname(pathtemp)
 
-      window.scrollTo = 0
-      console.log("Second : ",window.scrollY)
-    }
-
-    console.log("Dans addEventListener : ",pathname)
-  })
-
-  
-
-  // useEffect( () => {
-
-  // }, [pathname])
 
 
   return (

@@ -9,7 +9,7 @@ const ProductItems = ({product, ind}) => {
     <div className="bestItem" key={ind}>
         <img className={`${product.classname}`} src={product.img} alt={`${product.title}`}/>
         <div className="divIcons">
-            <Link to={`/detail/${product.title}`}>
+            <Link to={`/detail/${product.id}`}>
                 <SearchOutlined className="loop"/>
             </Link>
             <HeartOutlined className="heart"/>

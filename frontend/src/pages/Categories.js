@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { useHistory } from 'react-router-dom';
 import Navbar from './../components/Navbar';
 import Footer from './../components/Footer';
 import styled from "styled-components";
@@ -28,7 +29,11 @@ const DivBanner = styled.div`
 
 const Categories = () => {
 
-  const [category] = useState(categories[2])
+  const nameCategory = useHistory().location.search.split('=')[1]
+
+  console.log(categories)
+
+  const [category] = useState(categories.filter(category => category.title == nameCategory)[0])
 
 
   return (
@@ -36,7 +41,7 @@ const Categories = () => {
       <Navbar/>
 
         <DivBanner className='categoryBanner' bg={category.img}>
-          <h2>{category.title}</h2>
+          <h2>{nameCategory}</h2>
           <hr id="barre"/>
         </DivBanner>
 

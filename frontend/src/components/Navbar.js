@@ -7,15 +7,15 @@ import "./../assets/styles/Navbar.css";
 
 const Navbar = () => {
 
-  window.addEventListener('scroll', ()=>{
-    console.log(window.scrollY)
-    console.log(document.querySelector('.cartContainer'))
-    if(window.scrollY > 0){
-      document.querySelector(".navbarContainer").classList.add('scrolled')
-    }else{
-      document.querySelector(".navbarContainer").classList.remove('scrolled')
-    }
-  })
+  // window.addEventListener('scroll', ()=>{
+  //   console.log(window.scrollY)
+  //   console.log(document.querySelector('.cartContainer'))
+  //   if(window.scrollY > 0){
+  //     document.querySelector(".navbarContainer").classList.add('scrolled')
+  //   }else{
+  //     document.querySelector(".navbarContainer").classList.remove('scrolled')
+  //   }
+  // })
 
   return (
     <div className="navbarContainer">
