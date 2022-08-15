@@ -2,6 +2,9 @@ import React from 'react'
 
 import Navbar from './../components/Navbar';
 import Footer from '../components/Footer';
+import SlideBar from '../components/Account/SlideBar';
+
+import "./../assets/styles/Account.css"
 
 const Account = () => {
   return (
@@ -10,10 +13,10 @@ const Account = () => {
 
         <div className="divAccountContainer">
           <div className="divSlideBar">
-            <h2>Menu de la barre lattérale</h2>
+            <SlideBar/>
           </div>
           <div className="divContentAccount">
-            <h1>Contenu</h1>
+            <h2>Mes informations</h2>
           </div>
         </div>      
 

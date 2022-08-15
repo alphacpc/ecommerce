@@ -1,0 +1,41 @@
+.divAccountContainer{
+    padding: 50px 10% ;
+    background: #f5f4f4d0;
+
+    display: flex;
+}
+
+/* ****** SECTION SLIDE BAR ****** */
+.divAccountContainer .divSlideBar{
+    flex: 1;
+    padding: 10px;
+}
+
+.divAccountContainer .listLink{
+    background: #FFF;
+    list-style-type: none;
+    padding: 50px 20px;
+    border-radius: 4px;
+}
+
+.divAccountContainer .listLink li{
+    margin-bottom: 30px;
+}
+
+.divAccountContainer .listLink li a{
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+/* ****** SECTION CONTENT ACCOUNT ****** */
+.divAccountContainer .divContentAccount{
+    background: #FFF;
+    flex: 3.5;
+    padding: 20px;
+}
