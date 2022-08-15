@@ -1,0 +1,112 @@
+.divSignupContainer{
+    background: red;
+    min-height: 100vh;
+    display: flex;
+}
+
+.divSignupContainer .divBackground{
+    background: linear-gradient(to right, #0000006e, #0000003f), url("./../images/bannerShop1.jpg");
+    flex: 2;
+}
+
+.divSignupContainer .divForm{
+    background: white;
+    flex: 1;
+}
+
+
+.divPanelHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    margin-bottom: 40px;
+}
+
+
+.divPanelHeader span{
+    width: 150px;
+    height: 150px;
+    background: rgb(255, 60, 1);
+    position: absolute;
+    border-radius: 50%;
+}
+
+.divPanelHeader h2{
+    z-index: 1;
+    font-size: 45px;
+}
+
+.divForm{
+    padding: 4vh 20px;
+}
+
+.divForm form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.divForm .divFormGroup{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.divFormGroup label{
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+
+.divForm .divFormGroup div{
+    width: 100%;
+    background-color: #e5e2e285;
+    border-radius: 30px;
+    padding: 4px 0;
+}
+
+.divForm .divFormGroup div span{
+    margin: 0 5px 0 10px;
+}
+
+.divForm .divFormGroup input{
+    padding: 10px 5px;
+    font-size: 15px;
+    border: none;
+    outline: 0;
+    background: none;
+    width: 80%;
+}
+
+.divLine{
+    width: 100%;
+}
+
+.divForget{
+    text-align: end;
+}
+
+.btn-connect{
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.btn-connect button{
+    background-color: rgb(21, 21, 102);
+    border: none;
+    padding: 15px;
+    width: 200px;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #FFF;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.already a{
+    font-weight: bold;
+}
