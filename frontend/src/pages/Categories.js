@@ -45,6 +45,8 @@ const Categories = () => {
           <hr id="barre"/>
         </DivBanner>
 
+        
+
         <div className="divProducts">
           {
             products['best-sell'].map((product, ind) => (

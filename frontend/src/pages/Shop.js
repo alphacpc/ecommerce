@@ -49,7 +49,7 @@ const Shop = () => {
 
 
           {
-            ["Sacs", "Tshirt", "Montres", "Pull Over", "Jeans"].map((el,index) => (
+            ["Sacs", "Tshirt", "Montres", "Pull over", "Jeans"].map((el,index) => (
               <div className="byCartegory" key={index}>
               <h3>{el}</h3>
               <hr id="tiret"/>
