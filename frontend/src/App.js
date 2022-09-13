@@ -13,7 +13,7 @@ import Checkout from './pages/checkout';
 import Signin from './pages/Signin';
 import Signup from './pages/Signup';
 import ResetPassword from './pages/ResetPassword';
-import Account from './pages/Account';
+import Account from './pages/Account/Account';
 
 
 import Pay from './Pay';

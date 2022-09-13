@@ -1,7 +1,6 @@
 .divAccountContainer{
     padding: 50px 10% ;
     background: #f5f4f4d0;
-
     display: flex;
 }
 
@@ -16,6 +15,8 @@
     list-style-type: none;
     padding: 50px 20px;
     border-radius: 4px;
+    min-height: 30vh;
+    position: relative;
 }
 
 .divAccountContainer .listLink li{
@@ -25,6 +26,15 @@
 .divAccountContainer .listLink li a{
     letter-spacing: 1px;
     font-size: 20px;
+}
+
+.logout{
+    background: #F05;
+    padding: 10px;
+    border-radius: 4px;
+    color: #FFF;
+    position: absolute;
+    bottom: 20px;
 }
 
 
@@ -38,4 +48,118 @@
     background: #FFF;
     flex: 3.5;
     padding: 20px;
+    padding-bottom: 100px;
+}
+
+.divContentAccount .divPanelHead{
+    /* background: red; */
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.divAccountContainer h1{
+    letter-spacing: 1px;
+}
+
+.divContentAccount .divPanelHead a{
+    background: greenyellow;
+    padding: 5px;
+    letter-spacing: 1px;
+    border-radius: 4px;
+}
+
+.divIdentityContainer,
+.divLocationContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.divIdentityContainer .divIdentity,
+.divLocation{
+    width: 19vw;
+    margin-bottom: 20px;
+}
+
+
+.divIdentityContainer .divIdentity span,
+.divLocation span{
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 35px;
+}
+
+.divIdentityContainer .divIdentity p,
+.divLocation p{
+    background: #f5f4f4d0;
+    padding: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    width: 80%;
+}
+
+
+
+
+.divLocationContainer{
+    border-top: 1px solid #f5f4f4d0;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.divLocationContainer > p{
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.divLocation.divLess{
+    width: 10vw;
+}
+
+.divLocation:not(divLess){
+    width: 25vw;
+}
+
+.divLocation.divFull{
+    width: 100%;
+}
+
+.divLocation.divFull p{
+    margin-right: 0 !important;
+    width: 98%;
+}
+
+
+
+
+
+.divDates{
+    border-top: 1px solid #f5f4f4d0;
+    padding-top: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.divDates h2{
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.divDates > div{
+    display: flex;
+}
+
+.divDates > div > div{
+    margin-right: 50px;
+}
+
+.divDates > div > div span{
+    font-size: 25px;
+    letter-spacing: 1px;
+    line-height: 50px;
 }

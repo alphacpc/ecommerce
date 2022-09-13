@@ -14,10 +14,22 @@ const SlideBar = () => {
             <Link to="/moncompte">Mes commandes</Link>
         </li>
         <li>
+            <Link to="/moncompte">Utilisateurs</Link>
+        </li>
+        <li>
+            <Link to="/moncompte">Produits</Link>
+        </li>
+        <li>
+            <Link to="/moncompte">Commandes</Link>
+        </li>
+        <li>
+            <Link to="/moncompte">Fermer le compte</Link>
+        </li>
+        <li>
             <Link to="/moncompte">Mis à jour</Link>
         </li>
         <li>
-            <Link to="/moncompte">Déconnexion</Link>
+            <Link to="/moncompte" className="logout">Déconnexion</Link>
         </li>
     </ul>
   )

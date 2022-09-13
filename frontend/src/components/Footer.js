@@ -46,7 +46,7 @@ const Footer = () => {
           <div className="column">
             <p><MailOutlined/> bydoo@contact.com</p>
             <p><PhoneOutlined/> +221 33 000 00 00</p>
-            <p><HomeOutlined/> Yeumbeul Nord</p>
+            <p><HomeOutlined/> Dakar, Senegal</p>
           </div>
           <div className="methods-payement">
               {
