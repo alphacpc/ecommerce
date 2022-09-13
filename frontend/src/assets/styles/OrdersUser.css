@@ -1,0 +1,64 @@
+.divOrdersContainer.divAccountContainer .divContentAccount{
+    padding-bottom: 50px;
+}
+
+.divOrdesList{
+    margin-bottom: 30px;
+}
+
+table{
+    width: 100%;
+}
+
+thead{
+    background: rgb(223, 223, 221);
+}
+thead tr th{
+    padding: 15px;
+    letter-spacing: 2px;
+}
+
+tbody tr td{
+    padding: 15px 2px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+tbody tr td a{
+    font-weight: bold;
+}
+
+
+/* ********************************* */
+/* ****  STYLE ACTIONS FROM TD **** */
+/* ******************************* */
+.tdActions{
+    /* background: turquoise; */
+    display: flex;
+    flex-direction: column;
+}
+
+.tdActions{
+    padding: 5px 10px;
+}
+
+.tdActions a{
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-weight: 100;
+    font-size: 15px;
+}
+.tdActions a:nth-child(1){
+    background: greenyellow;
+}
+.tdActions a:nth-child(2){
+    background: rgb(0, 145, 255);
+}
+
+.tdActions a:last-child{
+    margin-bottom: 0;
+    background: #F05;
+    color: #FFF;
+}

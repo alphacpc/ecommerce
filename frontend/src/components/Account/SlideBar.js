@@ -11,7 +11,7 @@ const SlideBar = () => {
             <Link to="/moncompte">Tableau de Bord</Link>
         </li>
         <li>
-            <Link to="/moncompte">Mes commandes</Link>
+            <Link to="/commander">Mes commandes</Link>
         </li>
         <li>
             <Link to="/moncompte">Utilisateurs</Link>
@@ -20,7 +20,7 @@ const SlideBar = () => {
             <Link to="/moncompte">Produits</Link>
         </li>
         <li>
-            <Link to="/moncompte">Commandes</Link>
+            <Link to="/commandes">Commandes</Link>
         </li>
         <li>
             <Link to="/moncompte">Fermer le compte</Link>

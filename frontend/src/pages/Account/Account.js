@@ -21,10 +21,11 @@ const Account = () => {
           <div className="divSlideBar">
             <SlideBar/>
           </div>
+
           <div className="divContentAccount">
             <div className="divPanelHead">
-            <h1>Mes informations</h1>
-            <Link to="/moncompte">Modifier</Link>
+              <h1>Mes informations</h1>
+              <Link to="/moncompte">Modifier</Link>
             </div>
 
             <InformationUser/>
@@ -32,8 +33,6 @@ const Account = () => {
             <Adresse/>
 
             <DateAccount/>
-            
-
 
           </div>
         </div>      
@@ -43,4 +42,4 @@ const Account = () => {
   )
 }
 
-export default Account
+export default Account;
