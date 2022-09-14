@@ -17,7 +17,7 @@ const SlideBar = () => {
             <Link to="/utilisateurs">Utilisateurs</Link>
         </li>
         <li>
-            <Link to="/moncompte">Produits</Link>
+            <Link to="/produits">Produits</Link>
         </li>
         <li>
             <Link to="/commandes">Commandes</Link>

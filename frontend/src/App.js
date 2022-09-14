@@ -26,6 +26,7 @@ import Pay from './Pay';
 import Success from './Success';
 
 import Users from './pages/Users/Users';
+import Products from './pages/Products/Products';
 
 
 function App() {
@@ -49,6 +50,8 @@ function App() {
         <Route path="/commander"><OrdesUser/></Route>
 
         <Route path="/utilisateurs"><Users/></Route>
+
+        <Route path="/produits"><Products/></Route>
 
         <Route path="/pay"><Pay/></Route>  
         <Route path="/success"><Success/></Route>
