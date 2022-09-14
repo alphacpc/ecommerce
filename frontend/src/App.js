@@ -21,8 +21,11 @@ import Account from './pages/Account/Account';
 import Orders from './pages/Orders/Orders';
 import OrdesUser from './pages/Orders/OrdesUser';
 
+
 import Pay from './Pay';
 import Success from './Success';
+
+import Users from './pages/Users/Users';
 
 
 function App() {
@@ -45,6 +48,7 @@ function App() {
         <Route path="/commandes"><Orders/></Route>
         <Route path="/commander"><OrdesUser/></Route>
 
+        <Route path="/utilisateurs"><Users/></Route>
 
         <Route path="/pay"><Pay/></Route>  
         <Route path="/success"><Success/></Route>

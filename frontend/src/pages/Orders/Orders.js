@@ -4,7 +4,7 @@ import SlideBar from '../../components/Account/SlideBar';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
 
-import { EyeOutlined } from "@ant-design/icons"
+import { EyeOutlined, EditOutlined, DeleteOutlined, CheckOutlined } from "@ant-design/icons"
 
 
 const Orders = () => {
@@ -19,7 +19,7 @@ const Orders = () => {
 
             <div className="divContentAccount">
                 <div className="divPanelHead">
-                    <h1>Mes commandes</h1>
+                    <h1>Tous les commandes</h1>
                 </div>
 
                 <div className="divOrdesList">
@@ -38,7 +38,7 @@ const Orders = () => {
 
                     <tbody>
                         {
-                            [1,2,3,4,5,6].map(element => {
+                            [1,2,3,4,5,6,1,1,1,1].map(element => {
                                 return <tr>
                                 <td><Link to="commander"><EyeOutlined/> 768627GFFGJHG</Link></td>
                                 <td>22/11/2022</td>
@@ -47,9 +47,9 @@ const Orders = () => {
                                 <td>24 000 FCFA</td>
                                 <td>Encours</td>
                                 <td className="tdActions">
-                                    <Link>Modifier</Link>
-                                    <Link>Valider</Link>
-                                    <Link>Annuler</Link>
+                                    <Link> <EditOutlined/></Link>
+                                    <Link><CheckOutlined/></Link>
+                                    <Link><DeleteOutlined/></Link>
                                 </td>
                             </tr>
                             })

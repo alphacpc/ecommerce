@@ -1,0 +1,76 @@
+#formSearch input{
+    padding: 5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    outline: 0;
+    border: none;
+}
+#formSearch button{
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+}
+
+#formGroup select{
+    /* background: turquoise; */
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+
+.divUsers{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.divUser{
+    background: rgb(243, 244, 242);
+    width: 10.5vw;
+    margin: 0 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 5px;
+    border-radius: 8px;
+}
+
+.divUser:nth-child(5n){
+    margin-right: 0;
+}
+
+.divUser .circleUser{
+    background: #FFF;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.divUser h2{
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.divUser div{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divUser div span{
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.divUser div a{
+    background: orange;
+    padding: 5px;
+    border-radius: 4px;
+}
