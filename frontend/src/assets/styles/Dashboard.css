@@ -1,0 +1,137 @@
+.divStatusCards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divStatusItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    margin: 0 20px 20px 0;
+    border-radius: 4px;
+    padding: 10px;
+    transition: all ease .3s;
+    cursor: pointer;
+}
+
+.divStatusItem:hover{
+    transform: scale(.9);
+    box-shadow: 0 8px 10px 0px #000;
+}
+
+.divStatusItem span{
+    font-size: 65px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.divStatusItem h3{
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.divStatusItem.pending{
+    background: yellow;
+}
+
+.divStatusItem.done{
+    background: greenyellow;
+}
+
+.divStatusItem.warn{
+    background: gold;
+}
+
+.divStatusItem.danger{
+    background: #F05;
+    color: #FFF !important;
+}
+
+.divStatusItem.danger h3,
+.divStatusItem.danger span{
+    color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+.divStatProducts{
+    display: flex;
+    margin-top: 20px;
+}
+.divStatProducts div{
+    flex: 1;
+}
+
+
+
+.divCategories .head{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    align-content: center;
+}
+.divCategories .head h2{
+    font-size: 30px;
+}
+.divCategories .head button{
+    color: blue;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+.divCategories .cat{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divCategories .cat a{
+    background: rgb(235, 234, 234);
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0 20px 20px 0;
+    border-radius: 4px;
+}
+
+
+
+.divMoreVisited{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.divMoreVisited h2{
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.divMoreVisited a{
+    width: 5vw;
+    height: 10vh;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.divMoreVisited a img{
+    width: 100%;
+    object-fit: contain;
+}

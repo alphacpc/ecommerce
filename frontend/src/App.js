@@ -28,6 +28,10 @@ import Success from './Success';
 import Users from './pages/Users/Users';
 import Products from './pages/Products/Products';
 
+import Dashboard from './pages/Dashboard';
+
+
+
 
 function App() {
   
@@ -44,7 +48,10 @@ function App() {
         <Route path="/connexion"><Signin/></Route>
         <Route path="/inscription"><Signup/></Route>
         <Route path="/mot_de_passe_oublie"><ResetPassword/></Route>
+
         <Route path="/moncompte"><Account/></Route>
+
+        <Route path="/tableau_bord"><Dashboard/></Route>
 
         <Route path="/commandes"><Orders/></Route>
         <Route path="/commander"><OrdesUser/></Route>

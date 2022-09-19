@@ -175,3 +175,32 @@ export const iconsPayement = [
     }
     
 ]
+
+
+
+export const status = [
+    {
+        id:2,
+        label: "Commandes encours",
+        classname: "pending",
+        num: 44
+    },
+    {
+        id: 1,
+        label: "Commandes traitées",
+        classname: "done",
+        num: 1290
+    },
+    {
+        id:3,
+        label: "Produits en stock",
+        classname: "warn",
+        num : 400
+    },
+    {
+        id: 4,
+        label: "Produits en ruptures",
+        classname: "danger",
+        num : 12
+    }
+]

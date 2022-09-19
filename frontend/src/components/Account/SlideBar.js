@@ -8,7 +8,7 @@ const SlideBar = () => {
             <Link to="/moncompte">Informations</Link>
         </li>
         <li>
-            <Link to="/moncompte">Tableau de Bord</Link>
+            <Link to="/tableau_bord">Tableau de Bord</Link>
         </li>
         <li>
             <Link to="/commander">Mes commandes</Link>
