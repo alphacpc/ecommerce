@@ -28,7 +28,13 @@ const Products = () => {
                     <input placeholder='Recherche...'/>
                 </form>
 
-                <Link to="/produits" id="btnAddProduct">Ajouter un produit</Link>
+                <form action="">
+                    <select name="" id="">
+                        <option value="">Choisir une catégorie</option>
+                    </select>
+                </form>
+
+                <Link to="/nouveau_produit" id="btnAddProduct">Ajouter un produit</Link>
             </div>
 
             <div className="divProducts">

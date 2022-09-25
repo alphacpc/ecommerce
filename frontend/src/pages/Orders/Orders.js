@@ -20,6 +20,18 @@ const Orders = () => {
             <div className="divContentAccount">
                 <div className="divPanelHead">
                     <h1>Tous les commandes</h1>
+                    
+                    <form action="">
+                        <input type="text" placeholder="Recherche..."/>
+                    </form>
+                    
+                    <form action="">
+                        <select name="" id="">
+                            <option value="">Veuillez choisir un filtre</option>
+                        </select>
+                    </form>
+                    
+                    <Link to="nouvelle_commande">Ajouter une commande</Link>
                 </div>
 
                 <div className="divOrdesList">

@@ -7,7 +7,7 @@ import "./assets/styles/App.css";
 import Home from './pages/Home';
 
 import Shop from './pages/Shop';
-import Category from './pages/Categories';
+import Categories from './pages/Categories';
 import Single from './pages/Single';
 
 import Cart from './pages/Cart';
@@ -30,6 +30,11 @@ import Products from './pages/Products/Products';
 
 import Dashboard from './pages/Dashboard';
 
+import Category from './pages/Forms/Category'
+
+import ProductNew from './pages/Forms/Product';
+import CommandeNew from './pages/Forms/Commande';
+
 
 
 
@@ -41,7 +46,7 @@ function App() {
       <Switch>
         <Route path="/" exact><Home/></Route>
         <Route path="/boutique"><Shop/></Route>
-        <Route path="/categorie"><Category/></Route>
+        <Route path="/categorie"><Categories/></Route>
         <Route path="/detail/:name"><Single/></Route>
         <Route path="/panier"><Cart/></Route>
         <Route path="/commande"><Checkout/></Route>
@@ -59,6 +64,10 @@ function App() {
         <Route path="/utilisateurs"><Users/></Route>
 
         <Route path="/produits"><Products/></Route>
+
+        <Route path="/nouvelle_categorie"><Category/></Route>
+        <Route path="/nouveau_produit"><ProductNew/></Route>
+        <Route path="/nouvelle_commande"><CommandeNew/></Route>
 
         <Route path="/pay"><Pay/></Route>  
         <Route path="/success"><Success/></Route>
