@@ -11,6 +11,9 @@ const SlideBar = () => {
             <Link to="/tableau_bord">Tableau de Bord</Link>
         </li>
         <li>
+            <Link to="/bannieres">Bannieres</Link>
+        </li>
+        <li>
             <Link to="/commander">Mes commandes</Link>
         </li>
         <li>

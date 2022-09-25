@@ -4,7 +4,7 @@ const FormCommande = () => {
   return (
     <form id="formProduct" className="form">
         <div className="divFormGroup">
-            <label htmlFor="">Date du commande <span className="required">*</span></label>
+            <label htmlFor="">Date de la commande <span className="required">*</span></label>
             <input type="date" />
         </div>
 

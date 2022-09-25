@@ -35,6 +35,8 @@ import Category from './pages/Forms/Category'
 import ProductNew from './pages/Forms/Product';
 import CommandeNew from './pages/Forms/Commande';
 
+import Sliders from './pages/Account/Sliders';
+
 
 
 
@@ -55,6 +57,8 @@ function App() {
         <Route path="/mot_de_passe_oublie"><ResetPassword/></Route>
 
         <Route path="/moncompte"><Account/></Route>
+
+        <Route path="/bannieres"><Sliders/></Route>
 
         <Route path="/tableau_bord"><Dashboard/></Route>
 

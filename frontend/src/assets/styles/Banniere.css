@@ -1,0 +1,13 @@
+.divBannerItem{
+    margin-bottom: 40px;
+    border-bottom: 1px solid teal;
+    padding-bottom: 40px;
+}
+
+.divBannerItem:nth-child(3){
+    border-bottom: none;
+}
+
+.divBannerItem h2{
+    color: teal;
+}
