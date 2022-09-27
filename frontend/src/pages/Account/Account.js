@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 import Navbar from '../../components/Layouts/Navbar';
 import Footer from '../../components/Layouts/Footer';
-import SlideBar from '../../components/Layouts/SlideBar';
+import MenuSideBar from '../../components/Layouts/MenuSideBar';
 
 import InformationUser from '../../components/Account/InformationUser';
 import Adresse from '../../components/Account/Adresse';
@@ -19,7 +19,7 @@ const Account = () => {
 
         <div className="divAccountContainer">
           <div className="divSlideBar">
-            <SlideBar/>
+            <MenuSideBar/>
           </div>
 
           <div className="divContentAccount">

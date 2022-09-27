@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import FormCategory from '../../components/Forms/FormCategory';
 import Navbar from './../../components/Layouts/Navbar';
 import Footer from './../../components/Layouts/Footer';
-import SlideBar from './../../components/Layouts/SlideBar';
+import MenuSideBar from './../../components/Layouts/MenuSideBar';
 
 import "./../../assets/styles/Forms.css";
 
@@ -16,7 +16,7 @@ const Category = () => {
 
         <div className="divOrdersContainer divAccountContainer">
             <div className="divSlideBar">
-                <SlideBar/>
+                <MenuSideBar/>
             </div>
 
             <div className="divContentAccount">

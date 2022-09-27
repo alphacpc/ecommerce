@@ -2,7 +2,7 @@ import React from 'react';
 
 import Navbar from '../../components/Layouts/Navbar';
 import Footer from '../../components/Layouts/Footer';
-import SlideBar from '../../components/Layouts/SlideBar';
+import MenuSideBar from '../../components/Layouts/MenuSideBar';
 import Slider from '../../components/Account/Slider';
 
 import "../../assets/styles/Banniere.css"
@@ -15,7 +15,7 @@ const Sliders = () => {
 
         <div className="divOrdersContainer divAccountContainer">
             <div className="divSlideBar">
-                <SlideBar/>
+                <MenuSideBar/>
             </div>
 
             <div className="divContentAccount">

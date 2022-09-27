@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { EyeOutlined, UserOutlined } from '@ant-design/icons';
 
-import SlideBar from '../../components/Layouts/SlideBar';
+import MenuSideBar from '../../components/Layouts/MenuSideBar';
 import Footer from '../../components/Layouts/Footer';
 import Navbar from '../../components/Layouts/Navbar';
 import Pagination from '../../components/Utils/Pagination';
@@ -16,7 +16,7 @@ const AdminUserList = () => {
 
         <div className="divOrdersContainer divAccountContainer">
             <div className="divSlideBar">
-                <SlideBar/>
+                <MenuSideBar/>
             </div>
 
             <div className="divContentAccount">
