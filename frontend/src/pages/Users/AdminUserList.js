@@ -1,14 +1,15 @@
-import { EyeOutlined, UserOutlined } from '@ant-design/icons';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SlideBar from '../../components/Account/SlideBar';
-import Footer from '../../components/Footer';
-import Navbar from '../../components/Navbar';
+import { EyeOutlined, UserOutlined } from '@ant-design/icons';
 
+import SlideBar from '../../components/Layouts/SlideBar';
+import Footer from '../../components/Layouts/Footer';
+import Navbar from '../../components/Layouts/Navbar';
+import Pagination from '../../components/Utils/Pagination';
 
 import "../../assets/styles/users.css"
 
-const Users = () => {
+const AdminUserList = () => {
   return (
     <React.Fragment>
         <Navbar/>
@@ -48,13 +49,7 @@ const Users = () => {
                     })}
                 </div>
 
-                <div className="divPagination">
-                    <span>1</span>
-                    <span>2</span>
-                    <span>3</span>
-                    <span>...</span>
-                    <span>N</span>
-                </div>
+                <Pagination/>
 
             </div>
 
@@ -65,4 +60,4 @@ const Users = () => {
   )
 }
 
-export default Users;
+export default AdminUserList;

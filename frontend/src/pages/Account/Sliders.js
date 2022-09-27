@@ -1,18 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-import Navbar from './../../components/Navbar'
-import Footer from './../../components/Footer'
-import SlideBar from './../../components/Account/SlideBar'
+import Navbar from '../../components/Layouts/Navbar';
+import Footer from '../../components/Layouts/Footer';
+import SlideBar from '../../components/Layouts/SlideBar';
+import Slider from '../../components/Account/Slider';
 
-import Slider from '../../components/Account/Slider'
-
-import "./../../assets/styles/Banniere.css"
+import "../../assets/styles/Banniere.css"
 
 
 const Sliders = () => {
   return (
     <React.Fragment>
-
         <Navbar/>
 
         <div className="divOrdersContainer divAccountContainer">
@@ -20,9 +18,8 @@ const Sliders = () => {
                 <SlideBar/>
             </div>
 
-
             <div className="divContentAccount">
-                
+    
                 <div className="divPanelHead">
                     <h1>Bannières mis en avant</h1>
                 </div>
@@ -42,4 +39,4 @@ const Sliders = () => {
   )
 }
 
-export default Sliders
+export default Sliders;

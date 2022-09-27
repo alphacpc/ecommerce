@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from './../components/Navbar';
-import Footer from '../components/Footer';
-import Announcement from './../components/Announcement';
-import Categories from './../components/Categories';
-import BestSell from './../components/BestSell';
-import NewsLetter from '../components/NewsLetter';
+import Navbar from './../components/Layouts/Navbar';
+import Footer from '../components/Layouts/Footer';
+import Announcement from './../components/Layouts/Announcement';
+import Categories from './../components/Products/Categories';
+import BestSell from './../components/Stats/BestSell';
+import NewsLetter from '../components/Forms/NewsLetter';
 
 
 const Home = () => {

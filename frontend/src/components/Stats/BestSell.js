@@ -1,8 +1,8 @@
 import React from 'react';
-import "./../assets/styles/BestSell.css";
-import { products } from "./../Datas";
+import "../../assets/styles/BestSell.css";
+import { products } from "../../Datas";
 
-import ProductItem from './../components/ProductItem';
+import ProductItem from '../Products/ProductItem';
 
 
 

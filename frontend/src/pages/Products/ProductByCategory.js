@@ -1,17 +1,13 @@
 import React, {useState} from 'react';
 import { useHistory } from 'react-router-dom';
-import Navbar from './../components/Navbar';
-import Footer from './../components/Footer';
 import styled from "styled-components";
+import { categories, products } from '../../Datas';
 
+import Navbar from '../../components/Layouts/Navbar';
+import Footer from '../../components/Layouts/Footer';
+import ProductItem from '../../components/Products/ProductItem';
 
-import { categories, products } from './../Datas';
-import "./../assets/styles/DetailCategory.css";
-
-import ProductItem from './../components/ProductItem';
-
-
-
+import "../../assets/styles/DetailCategory.css";
 
 const DivBanner = styled.div`
     background: linear-gradient(to right, #00000048, #00000060),url(${(props) => props.bg});
@@ -26,13 +22,12 @@ const DivBanner = styled.div`
 `;
 
 
-
-const Categories = () => {
+const ProductByCategory = () => {
 
   const nameCategory = useHistory().location.search.split('=')[1]
 
 
-  const [category] = useState(categories.filter(category => category.title == nameCategory)[0])
+  const [category] = useState(categories.filter(category => category.title === nameCategory)[0])
 
 
   window.scrollTo(0, 10)
@@ -69,4 +64,4 @@ const Categories = () => {
   )
 }
 
-export default Categories
+export default ProductByCategory;

@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
-import {ArrowLeftOutlined, ArrowRightOutlined} from "@ant-design/icons";
 import { Link } from "react-router-dom";
-import "./../assets/styles/Announcement.css"
-import {sliderItems} from "./../Datas"
+import {ArrowLeftOutlined, ArrowRightOutlined} from "@ant-design/icons";
 import styled from "styled-components";
+import {sliderItems} from "../../Datas"
+
+import "../../assets/styles/Announcement.css"
 
 const Slide = styled.div`
   width: 100vw;
@@ -32,7 +33,6 @@ const Announcement = () => {
         }
     };
 
-    
     return (
         <div className="announcementContainer">
             <div className="divArrow left" direction="left" onClick={() => handleClick("left")}>
@@ -42,7 +42,7 @@ const Announcement = () => {
                 {sliderItems.map( (item) => (
                     <Slide bg={item.bg} key={item.id}>
                         <div className="imageSlider">
-                            <img src={item.img} alt="image du slide"/>
+                            <img src={item.img} alt={item.title}/>
                         </div>
                         <div className={`infoSlider ${item.classname}`}>
                             <h2 className="titleSlide">{item.title}</h2>

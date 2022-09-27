@@ -1,12 +1,13 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import SlideBar from '../components/Account/SlideBar';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
 
-import "../assets/styles/Dashboard.css"
+import SlideBar from '../../components/Layouts/SlideBar';
+import Footer from '../../components/Layouts/Footer';
+import Navbar from '../../components/Layouts/Navbar';
 
-import { status, products, categories } from "../Datas"
+import "../../assets/styles/Dashboard.css"
+
+import { status, products, categories } from "../../Datas"
 
 const Dashboard = () => {
     return (
@@ -49,8 +50,6 @@ const Dashboard = () => {
                             { products["best-sell"].slice(0,9).map((product, ind) => <Link key={ind}><img src={product['img']} alt="Product" /></Link>)}
                         </div>
                     </div>
-
-
 
                 </div>
             </div>

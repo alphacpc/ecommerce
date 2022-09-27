@@ -4,8 +4,8 @@ import { MediumOutlined, GithubOutlined,
   GitlabOutlined, LinkedinOutlined, 
   YoutubeOutlined, PhoneOutlined,
   MailOutlined, HomeOutlined } from '@ant-design/icons';
-import "./../assets/styles/Footer.css";
-import { iconsPayement } from '../Datas';
+import "../../assets/styles/Footer.css";
+import { iconsPayement } from '../../Datas';
 
 const Footer = () => {
   return (
@@ -51,7 +51,7 @@ const Footer = () => {
           <div className="methods-payement">
               {
                 iconsPayement.map((icon,index) => (
-                  <img src={icon.img} key={index} width={80}/>
+                  <img src={icon.img} key={index} alt={icon} width={80}/>
                 ))
               }
             </div>

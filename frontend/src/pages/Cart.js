@@ -3,9 +3,9 @@ import {Link} from 'react-router-dom'
 
 import "./../assets/styles/Cart.css"
 
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
-import ProductCart from '../components/ProductCart'
+import Footer from '../components/Layouts/Footer'
+import Navbar from '../components/Layouts/Navbar'
+import ProductCart from '../components/Products/ProductCart'
 
 import { HeartOutlined } from "@ant-design/icons";
 

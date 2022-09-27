@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRightOutlined } from "@ant-design/icons";
-import "./../assets/styles/NewsLetter.css";
+import "../../assets/styles/NewsLetter.css";
 
 
 const NewsLetter = () => {

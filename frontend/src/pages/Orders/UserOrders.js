@@ -2,13 +2,15 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import { EyeOutlined } from "@ant-design/icons"
 
-import SlideBar from '../../components/Account/SlideBar';
-import Footer from '../../components/Footer';
-import Navbar from '../../components/Navbar';
+import SlideBar from '../../components/Layouts/SlideBar';
+import Footer from '../../components/Layouts/Footer';
+import Navbar from '../../components/Layouts/Navbar';
+import Pagination from '../../components/Utils/Pagination';
 
 import "../../assets/styles/OrdersUser.css";
 
-const OrdesUser = () => {
+const UserOrders = () => {
+  
   return (
     <React.Fragment>
         <Navbar/>
@@ -53,17 +55,9 @@ const OrdesUser = () => {
                 </table>
             </div>
 
-
-            <div className="divPagination">
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-                <span className="etc">...</span>
-                <span>10</span>
-            </div>
+            <Pagination/>
 
           </div>
-
         </div>
 
         <Footer/>
@@ -71,4 +65,4 @@ const OrdesUser = () => {
   )
 }
 
-export default OrdesUser;
+export default UserOrders;

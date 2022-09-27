@@ -1,9 +1,9 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
-import SlideBar from '../../components/Account/SlideBar';
+import Navbar from '../../components/Layouts/Navbar';
+import Footer from '../../components/Layouts/Footer';
+import SlideBar from '../../components/Layouts/SlideBar';
 
 import InformationUser from '../../components/Account/InformationUser';
 import Adresse from '../../components/Account/Adresse';
@@ -33,7 +33,7 @@ const Account = () => {
             <Adresse/>
 
             <DateAccount/>
-
+            
           </div>
         </div>      
 

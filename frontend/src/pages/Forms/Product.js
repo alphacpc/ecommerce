@@ -1,19 +1,15 @@
-import React from 'react'
+import React from 'react';
 
+import ProductForm from '../../components/Forms/FormProduct';
+import Navbar from './../../components/Layouts/Navbar';
+import Footer from './../../components/Layouts/Footer';
+import SlideBar from './../../components/Layouts/SlideBar';
 
-import ProductForm from '../../components/Forms/FormProduct'
-import Navbar from './../../components/Navbar'
-import Footer from './../../components/Footer'
-import SlideBar from './../../components/Account/SlideBar'
-
-import "./../../assets/styles/Forms.css"
-
-
+import "./../../assets/styles/Forms.css";
 
 const ProductNew = () => {
   return (
     <React.Fragment>
-
         <Navbar/>
 
         <div className="divOrdersContainer divAccountContainer">
@@ -21,14 +17,12 @@ const ProductNew = () => {
                 <SlideBar/>
             </div>
 
-
             <div className="divContentAccount">
                 <div className="divPanelHead">
                     <h1>Ajouter un produit</h1>
                 </div>
 
                 <ProductForm/>
-
             </div>
         </div>
 
@@ -37,4 +31,4 @@ const ProductNew = () => {
   )
 }
 
-export default ProductNew
+export default ProductNew;

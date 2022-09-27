@@ -1,21 +1,15 @@
 import React from 'react';
-import {
-    UserOutlined, 
-    LockOutlined,
-    UsergroupAddOutlined,
-    MessageOutlined
-} from "@ant-design/icons";
+import { UserOutlined, LockOutlined, UsergroupAddOutlined, MessageOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 
+import '../../assets/styles/Signup.css'
 
-import './../assets/styles/Signup.css'
 
 const Signup = () => {
   return (
     <div className="divSignupContainer">
 
         <div className="divBackground"></div>
-
 
         <div className="divForm">
 
@@ -68,10 +62,6 @@ const Signup = () => {
                     </div>
                 </div>
 
-                {/* <div className="divForget divLine">
-                    <Link to="/">Mot de passe oublié !</Link>
-                </div> */}
-
                 <div className="divLine btn-connect">
                     <button>Enregistrer</button>
                 </div>
@@ -82,9 +72,8 @@ const Signup = () => {
 
             </form>
         </div>
-    
     </div>
   )
 }
 
-export default Signup
+export default Signup;

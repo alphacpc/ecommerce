@@ -1,26 +1,24 @@
 import React from 'react';
-import Navbar from './../components/Navbar';
-import Footer from '../components/Footer';
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { ArrowRightOutlined } from "@ant-design/icons";
-
-import "./../assets/styles/Shop.css";
 import { products } from "./../Datas";
 
-import ProductItem from './../components/ProductItem';
+import Footer from '../components/Layouts/Footer'
+import Navbar from '../components/Layouts/Navbar'
+import ProductItem from './../components/Products/ProductItem';
 
 import banner from "./../assets/images/bannerShop2.jpg"
 
+import "./../assets/styles/Shop.css";
+
 const BannerShop = styled.div`
-  
   height:80vh;
   background: linear-gradient(to left, #1b1b1b91, #1a1414ab),url('${(props) => props.bg}') no-repeat;
   background-position: center;
 `;
 
 const Shop = () => {
-
 
   return (
     <div className="shopContainer">
@@ -45,32 +43,29 @@ const Shop = () => {
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius consequuntur aspernatur optio quae distinctio, dolores laboriosam similique mollitia repellat earum tenetur. Rem, adipisci repellat. Fuga error id porro vitae omnis!
           Praesentium magni dolor neque mollitia rerum sed, reprehenderit dicta pariatur excepturi ea veniam repellat odio voluptas repudiandae magnam optio nemo commodi maiores corporis laborum, ullam officiis! Ea nesciunt quibusdam fugit.</p>
           
-
-
           {
             ["Sacs", "T-shirt", "Montres", "Pull over", "Jeans"].map((el,index) => (
               <div className="byCartegory" key={index}>
-              <h3>{el}</h3>
-              <hr id="tiret"/>
-              <div className="divProducts">
-                {
-                  products['best-sell'].map((product, ind) => (
-                    <ProductItem ind={ind} key={ind} product={product} />
-                ))
-                }
-              </div>
+                <h3>{el}</h3>
 
-              <div className='divLinkSeeMore'>
-                <Link to={`/categorie?nom=${el}`}>Voir plus <ArrowRightOutlined/></Link>
+                <hr id="tiret"/>
+
+                <div className="divProducts">
+                  {
+                    products['best-sell'].map((product, ind) => (
+                      <ProductItem ind={ind} key={ind} product={product} />
+                  ))
+                  }
+                </div>
+
+                <div className='divLinkSeeMore'>
+                  <Link to={`/categorie?nom=${el}`}>Voir plus <ArrowRightOutlined/></Link>
+                </div>
               </div>
-            </div>
             ))
           }
           
-
         </div>
-
-
       </div>
 
       <Footer/>
@@ -78,4 +73,4 @@ const Shop = () => {
   )
 }
 
-export default Shop
+export default Shop;

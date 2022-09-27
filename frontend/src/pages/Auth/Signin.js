@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
 import { LockOutlined, MessageOutlined } from "@ant-design/icons";
-import { Link } from "react-router-dom"
-import "./../assets/styles/Signin.css"
+import { Link } from "react-router-dom";
+
+import "../../assets/styles/Signin.css";
 
 const Signin = () => {
+
   return (
-    
     <div className="divSigninContainer">
         <div className="divForm">
 
@@ -14,9 +15,7 @@ const Signin = () => {
                 <span></span>
             </div>
 
-
             <form action="/inscription" method="post">
-        
                 <div className="divFormGroup">
                     <label htmlFor="">Votre Adresse email</label>
                     <div>
@@ -32,7 +31,6 @@ const Signin = () => {
                     </div>
                 </div>
                 
-
                 <div className="divForget divLine">
                     <Link to="/mot_de_passe_oublie">Mot de passe oublié !</Link>
                 </div>
@@ -52,4 +50,4 @@ const Signin = () => {
   )
 }
 
-export default Signin
+export default Signin;

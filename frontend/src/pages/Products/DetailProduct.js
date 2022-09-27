@@ -1,22 +1,11 @@
 import React, {useState} from 'react';
 import { useHistory } from 'react-router-dom';
+import {products} from "../../Datas"
 
+import Navbar from '../../components/Layouts/Navbar';
+import Footer from '../../components/Layouts/Footer';
 
-import styled from "styled-components";
-import Navbar from './../components/Navbar';
-import Footer from '../components/Footer';
-import "./../assets/styles/Single.css";
-import {products} from "./../Datas"
-
-
-const FilterColor = styled.div`
-  padding: 20px;
-  border-radius: 50%;
-  cursor: pointer;
-  background-color: #${(props) => props.color};
-`;
-
-
+import "../../assets/styles/Single.css";
 
 const Single = () => {
 
@@ -28,17 +17,14 @@ const Single = () => {
     if(quantity <= 9){
       setQuantity(quantity => quantity += 1)
     }
-    console.log(quantity)
   }
 
   const handleLess = () => {
-    if(quantity != 1){
+    if(quantity !== 1){
       setQuantity(quantity => quantity -= 1)
     }
-    console.log(quantity)
   }
-
-
+  
   window.scrollTo(0, 10);
 
 
@@ -65,17 +51,6 @@ const Single = () => {
             </div>
           </div>
 
-          {/* <div className="divColors">
-            <h2>Couleur(s)</h2>
-            <div className="divFilterColors">
-              {
-                product.colors.map((color,index) => (
-                  <FilterColor color={color} key={index}/>
-                ))
-              }
-            </div>
-          </div> */}
-
           <button id="btn-add-cart">Ajouter au panier</button>
 
         </div>
@@ -87,4 +62,4 @@ const Single = () => {
   )
 }
 
-export default Single
+export default Single;

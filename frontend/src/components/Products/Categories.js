@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import "./../assets/styles/Categories.css";
-import { categories } from './../Datas';
+import "../../assets/styles/Categories.css";
+import { categories } from '../../Datas';
 
 const CategoryItem = styled.div`
     background: linear-gradient(to right, #00000048, #00000060),url(${(props) => props.bg});

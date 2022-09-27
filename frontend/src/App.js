@@ -1,77 +1,66 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
-
 import "./assets/styles/App.css";
 
 import Home from './pages/Home';
 
 import Shop from './pages/Shop';
-import Categories from './pages/Categories';
-import Single from './pages/Single';
+import ProductByCategory from './pages/Products/ProductByCategory';
+import Single from './pages/Products/DetailProduct';
 
 import Cart from './pages/Cart';
-import Checkout from './pages/checkout';
 
-import Signin from './pages/Signin';
-import Signup from './pages/Signup';
-import ResetPassword from './pages/ResetPassword';
+import Signin from './pages/Auth/Signin';
+import Signup from './pages/Auth/Signup';
+import ResetPassword from './pages/Auth/ResetPassword';
 
 import Account from './pages/Account/Account';
-import Orders from './pages/Orders/Orders';
-import OrdesUser from './pages/Orders/OrdesUser';
-
+import AdminOrders from './pages/Orders/AdminOrders';
+import UserOrders from './pages/Orders/UserOrders';
 
 import Pay from './Pay';
 import Success from './Success';
 
-import Users from './pages/Users/Users';
-import Products from './pages/Products/Products';
+import AdminUserList from './pages/Users/AdminUserList';
+import AdminProductsList from './pages/Products/AdminProductsList';
 
-import Dashboard from './pages/Dashboard';
+import Dashboard from './pages/Account/Dashboard';
 
 import Category from './pages/Forms/Category'
-
 import ProductNew from './pages/Forms/Product';
-import CommandeNew from './pages/Forms/Commande';
+import AdminOrderForm from './pages/Forms/Order';
 
 import Sliders from './pages/Account/Sliders';
 
-
-
-
 function App() {
   
-
   return (
     <Router>
       <Switch>
         <Route path="/" exact><Home/></Route>
         <Route path="/boutique"><Shop/></Route>
-        <Route path="/categorie"><Categories/></Route>
+        <Route path="/categorie"><ProductByCategory/></Route>
         <Route path="/detail/:name"><Single/></Route>
         <Route path="/panier"><Cart/></Route>
-        <Route path="/commande"><Checkout/></Route>
+
         <Route path="/connexion"><Signin/></Route>
         <Route path="/inscription"><Signup/></Route>
         <Route path="/mot_de_passe_oublie"><ResetPassword/></Route>
 
         <Route path="/moncompte"><Account/></Route>
-
+        <Route path="/tableau_bord"><Dashboard/></Route>
+        <Route path="/utilisateurs"><AdminUserList/></Route>
         <Route path="/bannieres"><Sliders/></Route>
 
-        <Route path="/tableau_bord"><Dashboard/></Route>
+        <Route path="/commandes"><AdminOrders/></Route>
+        <Route path="/commander"><UserOrders/></Route>
 
-        <Route path="/commandes"><Orders/></Route>
-        <Route path="/commander"><OrdesUser/></Route>
-
-        <Route path="/utilisateurs"><Users/></Route>
-
-        <Route path="/produits"><Products/></Route>
+        <Route path="/produits"><AdminProductsList/></Route>
+        <Route path="/nouveau_produit"><ProductNew/></Route>
 
         <Route path="/nouvelle_categorie"><Category/></Route>
-        <Route path="/nouveau_produit"><ProductNew/></Route>
-        <Route path="/nouvelle_commande"><CommandeNew/></Route>
+        <Route path="/nouvelle_commande"><AdminOrderForm/></Route>
 
         <Route path="/pay"><Pay/></Route>  
         <Route path="/success"><Success/></Route>

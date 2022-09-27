@@ -1,18 +1,15 @@
-import React from 'react'
+import React from 'react';
 
+import FormCommande from '../../components/Forms/FormCommande';
+import Navbar from '../../components/Layouts/Navbar';
+import Footer from '../../components/Layouts/Footer';
+import SlideBar from '../../components/Layouts/SlideBar';
 
-import FormCommande from '../../components/Forms/FormCommande'
-import Navbar from './../../components/Navbar'
-import Footer from './../../components/Footer'
-import SlideBar from './../../components/Account/SlideBar'
+import "./../../assets/styles/Forms.css";
 
-import "./../../assets/styles/Forms.css"
-
-
-const Commande = () => {
+const Order = () => {
   return (
     <React.Fragment>
-
         <Navbar/>
 
         <div className="divOrdersContainer divAccountContainer">
@@ -20,14 +17,11 @@ const Commande = () => {
                 <SlideBar/>
             </div>
 
-
             <div className="divContentAccount">
                 <div className="divPanelHead">
                     <h1>Ajouter une commande</h1>
                 </div>
-
                 <FormCommande/>
-
             </div>
         </div>
 
@@ -36,4 +30,4 @@ const Commande = () => {
   )
 }
 
-export default Commande
+export default Order;
