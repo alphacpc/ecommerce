@@ -35,8 +35,6 @@ const Dashboard = () => {
                     </div>
 
                     <div className="divStatProducts">
-                        
-
                         <div className="divMoreVisited">
                             <h2>Les plus visités</h2>
                             { products["best-sell"].slice(0,9).map((product, ind) => <Link key={ind}><img src={product['img']} alt="Product" /></Link>)}

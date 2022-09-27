@@ -7,7 +7,7 @@
 /* ****** SECTION SLIDE BAR ****** */
 .divAccountContainer .divSlideBar{
     flex: 1;
-    padding: 10px;
+    padding-right: 10px;
 }
 
 .divAccountContainer .listLink{
@@ -64,10 +64,20 @@
 }
 
 .divContentAccount .divPanelHead a{
-    background: greenyellow;
+    background: #FFF;
     padding: 5px;
-    letter-spacing: 1px;
     border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    border: 2px solid rgb(0, 145, 255);
+    color: rgb(0, 145, 255);
+    letter-spacing: 1px;
+    transition: all ease .3s;
+}
+
+.divContentAccount .divPanelHead a:hover{
+    background: rgb(0, 145, 255);
+    color: #FFF;
 }
 
 .divIdentityContainer,

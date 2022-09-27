@@ -24,11 +24,12 @@ import Success from './Success';
 
 import AdminUserList from './pages/Users/AdminUserList';
 import AdminProductsList from './pages/Products/AdminProductsList';
+import AdminCategoryList from './pages/Products/AdminCategoryList';
 
 import Dashboard from './pages/Account/Dashboard';
 
-import Category from './pages/Forms/Category'
-import ProductNew from './pages/Forms/Product';
+import CategoryForm from './pages/Forms/Category'
+import ProductForm from './pages/Forms/Product';
 import AdminOrderForm from './pages/Forms/Order';
 
 import Sliders from './pages/Account/Sliders';
@@ -49,17 +50,17 @@ function App() {
         <Route path="/mot_de_passe_oublie"><ResetPassword/></Route>
 
         <Route path="/moncompte"><Account/></Route>
-        <Route path="/tableau_bord"><Dashboard/></Route>
-        <Route path="/utilisateurs"><AdminUserList/></Route>
-        <Route path="/bannieres"><Sliders/></Route>
-
-        <Route path="/commandes"><AdminOrders/></Route>
         <Route path="/commander"><UserOrders/></Route>
 
+        <Route path="/tableau_bord"><Dashboard/></Route>
+        <Route path="/bannieres"><Sliders/></Route>
         <Route path="/produits"><AdminProductsList/></Route>
-        <Route path="/nouveau_produit"><ProductNew/></Route>
+        <Route path="/categories"><AdminCategoryList/></Route>
+        <Route path="/commandes"><AdminOrders/></Route>
+        <Route path="/utilisateurs"><AdminUserList/></Route>
 
-        <Route path="/nouvelle_categorie"><Category/></Route>
+        <Route path="/nouveau_produit"><ProductForm/></Route>
+        <Route path="/nouvelle_categorie"><CategoryForm/></Route>
         <Route path="/nouvelle_commande"><AdminOrderForm/></Route>
 
         <Route path="/pay"><Pay/></Route>  

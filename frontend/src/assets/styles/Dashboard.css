@@ -60,10 +60,6 @@
 
 
 
-
-
-
-
 .divStatProducts{
     display: flex;
     margin-top: 20px;
@@ -73,39 +69,36 @@
 }
 
 
-
-.divCategories .head{
-    display: flex;
-    justify-content: space-between;
-    padding-right: 20px;
-    align-content: center;
-}
-.divCategories .head h2{
-    font-size: 30px;
-}
-.divCategories .head button{
-    color: blue;
-    cursor: pointer;
-    border: none;
-    background: transparent;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-
-.divCategories .cat{
-    margin-top: 30px;
+/* --------------------------------- */
+/* --------------------------------- */
+/* --------------------------------- */
+.divCategories{
+    margin: 50px 0;
     display: flex;
     flex-wrap: wrap;
 }
 
-.divCategories .cat a{
-    background: rgb(235, 234, 234);
+.divCategories a{
+    background: #f5f4f4d0;
     font-size: 20px;
-    padding: 10px 20px;
+    font-weight: bold;
+    padding: 15px 20px;
     margin: 0 20px 20px 0;
     border-radius: 4px;
+    letter-spacing: 1px;
+    transition: all ease .3s;
 }
+
+.divCategories a:hover{
+
+}
+
+/* --------------------------------- */
+/* --------------------------------- */
+/* --------------------------------- */
+
+
+
 
 
 

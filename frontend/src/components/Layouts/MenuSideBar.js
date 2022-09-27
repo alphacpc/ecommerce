@@ -8,7 +8,7 @@ const MenuSideBar = () => {
         <li><Link to="/tableau_bord">Tableau de Bord</Link></li>
         <li><Link to="/bannieres">Bannieres</Link></li>
 
-        <li><Link to="/bannieres">Mes catégories</Link></li>
+        <li><Link to="/categories">Mes catégories</Link></li>
 
         <li><Link to="/commander">Mes commandes</Link></li>
         <li><Link to="/utilisateurs">Utilisateurs</Link></li>
