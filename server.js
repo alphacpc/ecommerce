@@ -7,6 +7,7 @@ const userRouter = require("./Routers/user");
 const authRouter = require("./Routers/auth");
 const productRouter = require("./Routers/product");
 const stripeRouter = require("./Routers/stripe");
+const res = require("express/lib/response");
 
 // Define some constant
 const app = express()

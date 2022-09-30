@@ -50,10 +50,10 @@ router.post("/connexion", async (req,res) => {
     try{
         
         const user = await User.findOne({username: req.body.identifiant}) || await User.findOne({userEmail: req.body.identifiant});
-        !user && res.status(400).json("email ou pseudo incorrect !");
+        !user && res.status(400).json("Email ou Nom d'utilisateur incorrect !");
     
         const validated = await bcrypt.compare(req.body.password, user.userPw);
-        !validated && res.status(400).json("mot de passe incorrect !");
+        !validated && res.status(400).json("Mot de passe incorrect !");
 
         const accessToken = jwt.sign(
             {
@@ -70,7 +70,7 @@ router.post("/connexion", async (req,res) => {
     }
     
     catch(err){
-        console.log("Not working")
+        console.log("Comparaison ne marche pas !")
         res.status(500).json(err);
     }
 

@@ -13,10 +13,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alphacpc/ecommerce/issues"
-  },
-  "homepage": "https://github.com/alphacpc/ecommerce#readme",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "axios": "^0.26.0",
