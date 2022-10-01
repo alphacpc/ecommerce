@@ -22,7 +22,7 @@ const Category = () => {
             <div className="divContentAccount">
                 <div className="divPanelHead">
                     <h1>Ajouter une nouvelle catégorie</h1>        
-                    <Link>Retour</Link>
+                    <Link to="">Retour</Link>
                 </div>
 
                 <FormCategory/>

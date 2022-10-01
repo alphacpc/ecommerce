@@ -38,7 +38,7 @@ const verifyTokenAndAdmin = (req, res, next) => {
             next();
         }
         else{
-            res.status(403).json("Tu n'as pas les acces pour faire cette opération !")
+            res.status(403).json("Tu n'as pas les acces pour faire cette opération, vous etes pas un admin !")
         }
     })
 } 

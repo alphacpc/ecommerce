@@ -60,7 +60,7 @@ router.get("/", verifyTokenAndAdmin, async(req,res) =>{
 
     try{
         const users = query ? await User.find().sort({__id:-1}).limit(5) : await User.find();
-        res.status(200).json(users )
+        res.status(200).json(users)
     }
     catch(err){
         res.status(500).json(err)

@@ -1,33 +1,53 @@
-import React from 'react'
+import React, { useState } from 'react'
+import axios from 'axios'
 
 const FormCategory = () => {
-  return (
-    <form id="formCategory" className='form'>
-        <div className="divFormGroup">
-            <label htmlFor="">Nom de la catégorie <span className="required">*</span></label>
-            <input type="text" placeholder="Jean" />
-        </div>
 
-        <div className="divFormGroup">
-            <label htmlFor="">Image de la catégorie <span className="required">*</span></label>
-            <input type="file" placeholder="Jean" />
-        </div>
+    const [categoryTitle, setCategoryTitle] = useState("")
+    const [categoryImg, setCategoryImg] = useState(null)
+    const [categoryDesc, setCategoryDesc] = useState("")
 
-        <div className="divFormGroup">
-            <label htmlFor="">Tag de la catégorie <span className="required">*</span></label>
-            <input type="text" placeholder="Jean" />
-        </div>
+    const handleSubmitForm = async (e) => {
+        e.preventDefault()
 
-        <div className="divFormGroup">
-            <label htmlFor="">Description de la catégorie</label>
-            <textarea placeholder='Message' name="" id=""></textarea>
-        </div>
+        const newCategory = { categoryTitle, categoryImg, categoryDesc}
 
-        <p> <span className="required">*</span> Champs requis !</p>
+        try{
+            let res = await axios.post("/categories/", newCategory);
+            console.log("Saved => ",res)
+        }
+        catch(err){
+         console.log(err) 
+        }
 
-        <button>Enregistrer</button>
-    </form>
-  )
+
+        console.log("New category => ", newCategory)
+
+    }
+
+
+    return (
+        <form id="formCategory" className='form' onSubmit={handleSubmitForm}>
+            <div className="divFormGroup">
+                <label htmlFor="">Nom de la catégorie <span className="required">*</span></label>
+                <input type="text" placeholder="Jean" onChange={(e) => setCategoryTitle(e.target.value)} />
+            </div>
+
+            <div className="divFormGroup">
+                <label htmlFor="">Image de la catégorie <span className="required">*</span></label>
+                <input type="file" placeholder="Jean" onChange={(e) => setCategoryImg(e.target.files[0])} />
+            </div>
+
+            <div className="divFormGroup">
+                <label htmlFor="">Description de la catégorie</label>
+                <textarea placeholder='Message' onChange={(e)=> setCategoryDesc(e.target.value)}></textarea>
+            </div>
+
+            <p> <span className="required">*</span> Champs requis !</p>
+
+            <button type="submit">Enregistrer</button>
+        </form>
+    )
 }
 
 export default FormCategory

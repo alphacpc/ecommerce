@@ -4,9 +4,12 @@ const Product = require("../models/Product");
 
 
 //CREATE PRODUCT
-router.post("/", verifyTokenAndAdmin , async (req, res) => {
+router.post("/", async (req, res) => {
+    // router.post("/", verifyTokenAndAdmin , async (req, res) => {
     
     const product = new Product(req.body);
+
+    console.log(product)
 
     try{
         const savedProduct = await product.save();
@@ -64,7 +67,7 @@ router.get ("/find/:id", async(req,res) =>{
 
 
 // GET ALL PRODUCTS
-router.get("/",  async(req,res) =>{
+router.get("/", async(req,res) =>{
     
     const qNew= req.query.new;
     const qCategory= req.query.category;

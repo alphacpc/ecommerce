@@ -7,28 +7,31 @@ import MenuSideBar from './../../components/Layouts/MenuSideBar';
 
 import "./../../assets/styles/Forms.css";
 
-const ProductNew = () => {
-  return (
-    <React.Fragment>
-        <Navbar/>
+const ProductNew = (e) => {
+    
 
-        <div className="divOrdersContainer divAccountContainer">
-            <div className="divSlideBar">
-                <MenuSideBar/>
-            </div>
 
-            <div className="divContentAccount">
-                <div className="divPanelHead">
-                    <h1>Ajouter un produit</h1>
+    return (
+        <React.Fragment>
+            <Navbar/>
+
+            <div className="divOrdersContainer divAccountContainer">
+                <div className="divSlideBar">
+                    <MenuSideBar/>
                 </div>
 
-                <ProductForm/>
-            </div>
-        </div>
+                <div className="divContentAccount">
+                    <div className="divPanelHead">
+                        <h1>Ajouter un produit</h1>
+                    </div>
 
-        <Footer/>
-    </React.Fragment>
-  )
+                    <ProductForm/>
+                </div>
+            </div>
+
+            <Footer/>
+        </React.Fragment>
+    )
 }
 
 export default ProductNew;
