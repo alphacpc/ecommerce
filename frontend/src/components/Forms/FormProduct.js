@@ -1,3 +1,4 @@
+import axios from 'axios'
 import React, {useState} from 'react'
 
 const ProductForm = () => {
@@ -11,19 +12,26 @@ const ProductForm = () => {
     const [productDescShort, setProductDescShort] = useState("")
     const [productDescLong, setProductDescLong] = useState("")
     const [productQuantity, setProductQuantity] = useState(1)
-    const [productGallery, setProductGallery] = useState("")
+    const [productGallery, setProductGallery] = useState([])
 
     const handleSubmitFormProduct = async(e) => {
         e.preventDefault();
         
-        let newProduct = {productTitle, productImg, productCat, 
+        let newProduct = {productTitle, productCat, productMarque,
             productPrice, productPricePromo, productDescShort, 
             productDescLong, productQuantity, productGallery 
         }
+        
+
+        console.log(productImg.name)
+
+        if(productImg){
+            newProduct.productImg = Date.now() + productImg.name
+        }
 
         try{
-            // const res = await axios.post("/products/", newProduct);
-            window.location.replace("/nouveau_produit/")
+            const res = await axios.post("/products/", newProduct);
+            console.log("value de res => ", res)
         }
         catch(err){
             console.log(err)
@@ -87,7 +95,7 @@ const ProductForm = () => {
 
         <div className="divFormGroup">
             <label htmlFor="productGallery">Gallerie</label>
-            <input type="file" id="productGallery" name="productGallery" value={productGallery} onChange={(e) => setProductGallery(e.target.value)} placeholder="Jean" />
+            <input type="file" id="productGallery" name="productGallery" onChange={(e) => setProductGallery(e.target.files[0])} placeholder="Jean" />
         </div>
 
         <p> <span className="required">*</span> Champs requis !</p>

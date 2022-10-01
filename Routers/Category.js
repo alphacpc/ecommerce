@@ -14,7 +14,7 @@ router.post("/", async (req, res) => {
         res.status(200).json(savedCategory)
     }
     catch(err){
-        console.log("Not working")
+        console.log("Not working mafe")
         res.status(500).json(err)
     }
 })

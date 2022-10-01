@@ -9,14 +9,12 @@ router.post("/", async (req, res) => {
     
     const product = new Product(req.body);
 
-    console.log(product)
-
     try{
         const savedProduct = await product.save();
         res.status(200).json(savedProduct)
     }
     catch(err){
-        console.log("Not working")
+        console.log("Not working mafe")
         res.status(500).json(err)
     }
 })

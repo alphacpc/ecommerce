@@ -39,7 +39,6 @@ connectDB();
 
 //Launch connexion and open server
 mongoose.connection.once("open", () => {
-    console.log("Connected to MongoDB");
     app.listen(PORT,()=> console.log("Mon serveur tourne sur le port :",PORT));
 })
 

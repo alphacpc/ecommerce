@@ -10,7 +10,15 @@ const FormCategory = () => {
     const handleSubmitForm = async (e) => {
         e.preventDefault()
 
-        const newCategory = { categoryTitle, categoryImg, categoryDesc}
+        const newCategory = { categoryTitle, categoryDesc}
+
+        if(categoryImg){
+            const data = new FormData();
+            const filename = Date.now() + categoryImg.name;
+            data.append("name",filename);
+            data.append("file",categoryImg);
+            newCategory.categoryImg = filename;
+        }
 
         try{
             let res = await axios.post("/categories/", newCategory);
@@ -27,7 +35,7 @@ const FormCategory = () => {
 
 
     return (
-        <form id="formCategory" className='form' onSubmit={handleSubmitForm}>
+        <form id="formCategory" className='form' onSubmit={handleSubmitForm} method="POST">
             <div className="divFormGroup">
                 <label htmlFor="">Nom de la catégorie <span className="required">*</span></label>
                 <input type="text" placeholder="Jean" onChange={(e) => setCategoryTitle(e.target.value)} />
