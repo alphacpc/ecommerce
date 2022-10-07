@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 import {Link} from "react-router-dom";
 import { EyeOutlined, EditOutlined, DeleteOutlined, CheckOutlined } from "@ant-design/icons"
+import axios from 'axios';
+
 
 import MenuSideBar from '../../components/Layouts/MenuSideBar';
 import Footer from '../../components/Layouts/Footer';
@@ -8,6 +10,22 @@ import Navbar from '../../components/Layouts/Navbar';
 import Pagination from '../../components/Utils/Pagination';
 
 const AdminOrders = () => {
+
+    const [ orders, setOrders ] = useState([])
+
+    const fetchOrders = async () => {
+        const response = await (await axios.get('/orders')).data
+
+        setOrders(response)
+    }
+
+    useEffect( () => {
+
+        fetchOrders()
+    
+    }, [] )
+
+
   
     return (
     <React.Fragment>
@@ -51,18 +69,18 @@ const AdminOrders = () => {
 
                     <tbody>
                         {
-                            [1,2,3,4,5,6,1,1,1,1].map(element => {
-                                return <tr>
-                                <td><Link to="commander"><EyeOutlined/> 768627GFFGJHG</Link></td>
-                                <td>22/11/2022</td>
+                            orders.map( (order,id) => {
+                                return <tr key={id}>
+                                <td><Link to={ `/detail/commande/${order["_id"]}` }><EyeOutlined/>768627GFFGJHG</Link></td>
+                                <td>{ order["dateOrder"] }</td>
                                 <td>3 articles</td>
-                                <td>Visa</td>
-                                <td>24 000 FCFA</td>
-                                <td>Encours</td>
+                                <td>{ order["payementOrder"] }</td>
+                                <td>{ order["amountOrder"] } FCFA</td>
+                                <td>{ order["statusOrder"] }</td>
                                 <td className="tdActions">
-                                    <Link> <EditOutlined/></Link>
-                                    <Link><CheckOutlined/></Link>
-                                    <Link><DeleteOutlined/></Link>
+                                    <Link to="#"><EditOutlined/></Link>
+                                    <Link to="#"><CheckOutlined/></Link>
+                                    <Link to="#"><DeleteOutlined/></Link>
                                 </td>
                             </tr>
                             })

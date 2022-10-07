@@ -1,13 +1,15 @@
 const { verifyToken, verifyTokenAndAuthorization, verifyTokenAndAdmin } = require("./verifyToken");
 const router = require("express").Router();
 const Order = require("../models/Order");
-const res = require("express/lib/response");
 
 
 //CREATE PRODUCT
-router.post("/", verifyToken , async (req, res) => {
+router.post("/" , async (req, res) => {
+    // router.post("/", verifyToken , async (req, res) => {
     
     const newOrder = new Order(req.body);
+
+    console.log(newOrder)
 
     try{
         const savedOrder = await newOrder.save();
@@ -15,6 +17,7 @@ router.post("/", verifyToken , async (req, res) => {
     }
     catch(err){
         console.log("Not working")
+        console.log(err)
         res.status(500).json(err)
     }
 })
@@ -65,7 +68,8 @@ router.get ("/find/:userId", verifyTokenAndAuthorization,async(req,res) =>{
 
 
 // GET ALL
-router.get("/", verifyTokenAndAdmin, async(req, res) => {
+router.get("/", async(req, res) => {
+    // router.get("/", verifyTokenAndAdmin, async(req, res) => {
 
     try{
         const orders = await Order.find()

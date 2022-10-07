@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {Link} from "react-router-dom";
 import { products } from "../../Datas";
+import axios from 'axios';
+
 
 import MenuSideBar from '../../components/Layouts/MenuSideBar';
 import Footer from '../../components/Layouts/Footer';
@@ -11,6 +13,22 @@ import "../../assets/styles/Product.css"
 
 
 const AdminProductsList = () => {
+
+    const [ products, setProducts ] = useState([])
+
+    const fetchCategories = async() => {
+      const response = await (await axios.get("/products")).data
+      await setProducts(response)
+    }
+  
+  
+    useEffect(() => {
+  
+      fetchCategories()
+      
+    },[])
+  
+    console.log(products)
 
   return (
     <React.Fragment>
@@ -40,10 +58,10 @@ const AdminProductsList = () => {
 
                 <div className="divProducts">
                     {
-                        [1,1,1,1,1,1,1,1,1].map( (prd, ind) => {
+                        products.map( (product, ind) => {
                             return <div className="divProduct" key={ind}>
-                                <img src={products["best-sell"][0]["img"]} alt="Products" />
-                                <h2><Link to="/produits">Black Crystale</Link></h2>
+                                <img src={require("../../assets/images/Produits/montre2.png")} alt={product['productTitle']} />
+                                <h2><Link to="/produits">{product["productTitle"]}</Link></h2>
                             </div>
                         })
                     }

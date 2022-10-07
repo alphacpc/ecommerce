@@ -10,6 +10,7 @@ const userRouter = require("./Routers/user");
 const authRouter = require("./Routers/auth");
 const productRouter = require("./Routers/product");
 const categoryRouter = require("./Routers/Category");
+const orderRouter = require("./Routers/order");
 const stripeRouter = require("./Routers/stripe");
 
 // DEFINE GLOBAL SOME CONSTANTs
@@ -30,6 +31,7 @@ app.use("/api/users", userRouter);
 app.use("/api/auth", authRouter);
 app.use("/api/products", productRouter);
 app.use("/api/categories", categoryRouter);
+app.use("/api/orders", orderRouter);
 app.use("/api/checkout", stripeRouter);
 
 

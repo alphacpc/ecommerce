@@ -10,6 +10,7 @@ router.post("/", async (req, res) => {
     const product = new Product(req.body);
 
     try{
+        console.log(product)
         const savedProduct = await product.save();
         res.status(200).json(savedProduct)
     }

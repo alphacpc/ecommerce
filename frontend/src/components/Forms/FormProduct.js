@@ -23,13 +23,13 @@ const ProductForm = () => {
         }
         
 
-        console.log(productImg.name)
 
         if(productImg){
             newProduct.productImg = Date.now() + productImg.name
         }
 
         try{
+            
             const res = await axios.post("/products/", newProduct);
             console.log("value de res => ", res)
         }
