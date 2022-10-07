@@ -28,7 +28,6 @@ const AdminProductsList = () => {
       
     },[])
   
-    console.log(products)
 
   return (
     <React.Fragment>
@@ -61,7 +60,7 @@ const AdminProductsList = () => {
                         products.map( (product, ind) => {
                             return <div className="divProduct" key={ind}>
                                 <img src={require("../../assets/images/Produits/montre2.png")} alt={product['productTitle']} />
-                                <h2><Link to="/produits">{product["productTitle"]}</Link></h2>
+                                <h2><Link to={ `/detail/produit/${product['_id']}` }>{product["productTitle"]}</Link></h2>
                             </div>
                         })
                     }

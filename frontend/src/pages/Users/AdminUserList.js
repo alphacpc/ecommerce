@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { EyeOutlined, UserOutlined } from '@ant-design/icons';
+import axios from 'axios';
+
+
 
 import MenuSideBar from '../../components/Layouts/MenuSideBar';
 import Footer from '../../components/Layouts/Footer';
@@ -10,6 +13,22 @@ import Pagination from '../../components/Utils/Pagination';
 import "../../assets/styles/users.css"
 
 const AdminUserList = () => {
+
+    const [ users, setUsers ] = useState([])
+
+    const fetchUsers = async () => {
+        const response = await (await axios.get('/users')).data
+
+        setUsers(response)
+    }
+
+    useEffect( () => {
+
+        fetchUsers()
+    
+    }, [] )
+
+
   return (
     <React.Fragment>
         <Navbar/>
@@ -37,13 +56,13 @@ const AdminUserList = () => {
                 </div>
 
                 <div className="divUsers">
-                    { [1,1,1,1,1,1,1,1,1,1,1,1,1,1].map((element, ind) => {
-                        return <div className="divUser">
+                    { users.map((user, ind) => {
+                        return <div className="divUser" key={ind}>
                             <UserOutlined className="circleUser"/>
-                            <h2>Luka Modric</h2>
+                            <h2>{ user["userFname"] } { user["userLname"] }</h2>
                             <div>
                                 <span>+1 Point(s)</span>
-                                <Link to="/utilisateurs"><EyeOutlined/> Voir plus</Link>
+                                <Link to={`/detail/utilisateur/${user["_id"]}`}><EyeOutlined/> Voir plus</Link>
                             </div>
                         </div>
                     })}

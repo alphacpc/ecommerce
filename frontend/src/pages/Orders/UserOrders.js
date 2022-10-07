@@ -40,8 +40,8 @@ const UserOrders = () => {
 
                     <tbody>
                         {
-                            [1,2,3,4,5,6,7,8,9,10].map(element => {
-                                return <tr>
+                            [1,2,3,4,5,6,7,8,9,10].map((el, ind) => {
+                                return <tr key={ ind }>
                                 <td><Link to="commander"><EyeOutlined/> 768627GFFGJHG</Link></td>
                                 <td>22/11/2022</td>
                                 <td>3 articles</td>
