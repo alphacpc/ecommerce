@@ -1,0 +1,39 @@
+.divProductDetail{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divGallery,
+.divProductDesc{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divGallery div{
+    width: 180px;
+    height: 200px;
+    background: #f5f4f4d0;
+    margin: 0 25px 25px 0;
+    position: relative;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.divGallery div img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.divGallery div button{
+    background: #F05;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #FFF;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}

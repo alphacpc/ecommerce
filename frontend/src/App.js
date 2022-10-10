@@ -34,11 +34,16 @@ import AdminOrderForm from './pages/Forms/Order';
 
 import Sliders from './pages/Account/Sliders';
 
+import AdminProduct from './pages/Products/AdminProduct';
+
+
+
 function App() {
   
   return (
     <Router>
       <Switch>
+
         <Route path="/" exact><Home/></Route>
         <Route path="/boutique"><Shop/></Route>
         <Route path="/categorie"><ProductByCategory/></Route>
@@ -62,6 +67,10 @@ function App() {
         <Route path="/nouveau_produit"><ProductForm/></Route>
         <Route path="/nouvelle_categorie"><CategoryForm/></Route>
         <Route path="/nouvelle_commande"><AdminOrderForm/></Route>
+
+        <Route path="/produit/:id"><AdminProduct/></Route>
+
+
 
         <Route path="/pay"><Pay/></Route>  
         <Route path="/success"><Success/></Route>

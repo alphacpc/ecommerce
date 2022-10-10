@@ -10,7 +10,6 @@ import "./../../assets/styles/Forms.css";
 const ProductNew = (e) => {
     
 
-
     return (
         <React.Fragment>
             <Navbar/>
@@ -24,7 +23,7 @@ const ProductNew = (e) => {
                     <div className="divPanelHead">
                         <h1>Ajouter un produit</h1>
                     </div>
-
+                    
                     <ProductForm/>
                 </div>
             </div>
