@@ -49,7 +49,7 @@ const AdminProduct = () => {
                 { 
                     (product) ? (<>
                         <div className="divPanelHead">
-                            <h1>Liste des produits</h1>
+                            <h1>{product.productTitle}</h1>
 
                             <Link to="/produits" id="btnAddProduct">Liste des produits</Link>
                         </div>
@@ -60,18 +60,32 @@ const AdminProduct = () => {
                             </div>
 
                             <div className="divProductInfo">
-                                <h2>{product.productTitle}</h2>
-
                                 <p>{product.productMarque}</p>
                                 <p>{product.productCat}</p>
-                                <p>{product.productPrice}</p>
-                                <p>{product.productPricePromo}</p>
+                                <div className="divPrices promo">
+                                    <span>{product.productPrice} FCFA</span>
+                                    <span>{product.productPricePromo}</span>
+                                    <span>39788 FCFA</span>
+                                </div>
+
+                                <p>{ product.productDescShort }</p>
+                                
                                 <p>{product.productQuantity}</p>
                             </div>
 
                             <div className="divProductDesc">
-                                <p>{ product.productDescShort }</p>
-                                <p>{ product.productDescLong }</p>
+
+                               
+
+                                <div>
+                                    <h3>Description longue</h3>
+                                    <p>{ product.productDescLong }</p>
+                                </div>
+                            </div>
+
+                            <div className="divHeadGalery">
+                                <h2>Galerie</h2>
+                                <button>Ajouter une image</button>
                             </div>
 
                             <div className="divGallery">

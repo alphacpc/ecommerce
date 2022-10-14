@@ -1,23 +1,53 @@
 .divProductDetail{
     display: flex;
     flex-wrap: wrap;
+    /* background: yellow; */
 }
+
+.divProductInfo p:first-child{
+    font-weight: bold;
+}
+
+.divProductInfo .divPrices{
+    /* background: blueviolet; */
+    display: flex;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+.divProductInfo .divPrices span:first-child{
+    margin-right: 20px;
+    font-size: 35px ;
+}
+
+.divProductInfo .divPrices span:last-child{
+    background: #D8D9CF;
+    padding: 5px 10px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+
+
 
 .divGallery,
 .divProductDesc{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    /* background: aquamarine; */
 }
 
 .divGallery div{
     width: 180px;
     height: 200px;
-    background: #f5f4f4d0;
     margin: 0 25px 25px 0;
     position: relative;
     border-radius: 4px;
     padding: 10px;
+    /* background: pink; */
 }
 
 .divGallery div img{
@@ -36,4 +66,46 @@
     position: absolute;
     right: 10px;
     bottom: 10px;
+    letter-spacing: 1px;
+}
+
+
+.divProductDesc{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+.divProductDesc div h3{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.divProductDesc div p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+.divHeadGalery{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: #F05; */
+    width: 100%;
+}
+
+.divHeadGalery h2{
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 20px 0;
+}
+
+.divHeadGalery button{
+    padding: 10px;
+    border-radius: 4px solid transparent;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    background: #D8D9CF;
 }
